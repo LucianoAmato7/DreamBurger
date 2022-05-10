@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="divap">
+
+        <header>
+
+            <img class="logodb" src="../img/logodb.jpg" alt="logodreamburger">
+
+            <nav>
+
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>    
+                    </li>
+
+                    <li>
+                        <a href="armar.html">¡Arma tu pedido!</a>
+                    </li>
+
+                    <li>
+                        <a href="catering.html">Catering</a>
+                    </li>
+
+                    <li>
+                        <a href="nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+    
+
+            </nav>
+
+        </header>
+
+
+        <div class="boxtituloap">  
+             
+            <h2 class="h2ap">!Selecciona lo que desees y envia tu pedido¡</h2>
+            
+        </div>  
+            
+        <article class="artap">
+            
+            <form class="formap" action="">
+
+				<label for="Nombre">Nombre:
+                    <input class="campodeSeleccion" type="text" placeholder="Ingrese su nombre" name="Nombre">
+                </label> <br>
+
+                <label for="email">email:
+                    <input class="campodeSeleccion" type="email" placeholder="aaa@gmail.com"  name="email">
+                </label> <br>
+
+                <label for="telefono">Numero de telefono:
+                    <input class="campodeSeleccion" type="number" placeholder="11 0000-0000" name="telefono">
+                </label> <br>
+
+                <p class="pselectingred">Llego la parte divertida... !Seleccione los ingredientes¡</p>
+
+                <p class="titulodeseleccion">Pan:</p>
+				<select class="campodeSeleccion" name="Pan" id="Pan"> 
+					<option value="Manteca">Manteca</option>
+					<option value="Papa">Papa</option>
+					<option value="Integral">Integral</option>
+				</select><br>
+
+                <p class="titulodeseleccion">Tipo de Carne:</p>
+				<select class="campodeSeleccion" name="Carne" id="Carne"> 
+					<option value="Vacuna">Vacuna</option>
+					<option value="Pollo">Pollo</option>
+					<option value="Veggie">Veggie</option>
+				</select><br>
+
+                <div>
+                    <p class="titulodeseleccion">Numero de Medallones:</p>
+                    <div>1
+                        <input type="radio" name="Medallones" value="1">
+                    </div>
+                    <div>2
+                        <input type="radio" name="Medallones" value="2">
+                    </div>
+                    <div>3
+                        <input type="radio" name="Medallones" value="3">
+                    </div>
+                </div>
+
+
+                <div>
+                    <p class="titulodeseleccion">Quesos:</p>
+                    <div>Muzzarella
+                        <input type="checkbox" name="Quesos" value="Muzzarella">
+                    </div>
+                    <div>Cheddar
+                        <input type="checkbox" name="Quesos" value="Cheddar">
+                    </div>
+                </div>
+
+            
+                <div>
+                    <p class="titulodeseleccion">Aderezos:</p>
+                    <div>Mayonesa
+                        <input type="checkbox" name="Aderezos" value="Mayonesa">
+                    </div>
+
+                    <div>Ketchup
+                        <input type="checkbox" name="Aderezos" value="Ketchup">
+                    </div>
+
+                    <div>Mostaza
+                        <input type="checkbox" name="Aderezos" value="Mostaza">
+                    </div>
+
+                    <div>Barbacoa
+                        <input type="checkbox" name="Aderezos" value="Barbacoa">
+                    </div>
+
+                    <div>Salsa DB
+                        <input type="checkbox" name="Aderezos" value="Salsa DB">
+                    </div>
+                </div>
+
+
+                <div>
+                    <p class="titulodeseleccion">Vegetales:</p>
+                    <div>Lechuga
+                        <input type="checkbox" name="Vegetales" value="Lechuga">
+                    </div>
+
+                    <div>Tomate
+                        <input type="checkbox" name="Vegetales" value="Tomate">
+                    </div>
+
+                    <div>Cebolla
+                        <input type="checkbox" name="Vegetales" value="Cebolla">
+                    </div>
+
+                    <div>Pepino
+                        <input type="checkbox" name="Vegetales" value="Pepino">
+                    </div>
+                </div>  
+
+                <p class="titulodeseleccion">Papas fritas:</p>
+				<select class="campodeSeleccion" name="papasfritas" id="papasfritas"> 
+					<option value="NO">NO</option>
+					<option value="chicas">Chicas</option>
+					<option value="medianas">Medianas</option>
+                    <option value="grandes">Grandes</option>
+				</select><br>
+
+                
+                <div>
+                    <p class="titulodeseleccion">Bebida:</p>
+                    <div>CocaCola
+                        <input type="radio" name="bebida" value="CocaCola">
+                    </div>
+                    <div>Sprite
+                        <input type="radio" name="bebida" value="Sprite">
+                    </div>
+                    <div>Fanta
+                        <input type="radio" name="bebida" value="Fanta">
+                    </div>
+                    <div>Light
+                        <input type="checkbox" name="bebida" value="Light">
+                    </div>
+                </div>
+                
+
+				<input class="botonformArmarPedido" type="submit" value="ENVIAR">
+                <input class="botonformArmarPedido" type="reset" value="RESETEAR">
+				
+                
+
+			</form>
+
+        </article>
+        
+        <article class="artaptexto">
+            <p>Disponemos de Stock de toda la mercaderia a seleccionar.</p>
+            <p>Te llegara un mail con la confirmacion del pedido, de lo contrario contactanos a nuestro numero de WPP indicando el problema y tu nombre.</p>
+        </article>  
+
+
+        <footer>
+
+            <div class="logosRedesFlex" >        
+                <a href="https://www.instagram.com/"><img class="redSocial" src="../img/Instagram.png" alt="Insatgram"></a>
+                <a href="https://www.facebook.com/"><img class="redSocial" src="../img/Facebook2.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com/"><img class="redSocial" src="../img/Twitter.png" alt="Twitter"></a>
+            </div>
+
+            <p class="derechodeAutor">Derechos de autor</p>
+
+        </footer>
+
+    </div>    
+
+</body>
+</html>

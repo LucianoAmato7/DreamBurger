@@ -1,0 +1,1248 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;1,200&family=Island+Moments&family=Oswald:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+body {
+    background-color: rgba(255, 166, 0, 0.603);
+    min-height: 100vh;
+}
+
+header{
+    background-color: rgb(43, 43, 43);
+    height: 13%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 10px;  
+    align-items: center;
+    display: grid;
+    grid-area: header;  
+}
+
+nav {
+    display: flex;  
+    width: 100%;
+    /* height: 90px; */
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    padding-right: 15px;
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(255, 166, 0, 0.603);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    margin: 20px 20px 20px 20px;
+}
+
+
+.logodb {
+    position: absolute;
+    margin: 0.5%;
+    height: 90%;
+}
+
+
+
+/* index comienzo */
+
+.h1Index {
+    font-size: 55px;
+    text-align: center;
+}
+
+.h2Index {
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 0 1cm 1cm 1cm;
+    text-align: center;
+
+}
+
+
+
+.imagenBurger {
+    background-image: url(../img/hamburguesa4.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-top: solid rgb(87, 39, 1);
+    border-bottom: solid rgb(87, 39, 1);
+    border-width: 5px;
+    padding: 100px 0px 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.imgFrente {
+    width: 45%;
+    margin: 30px 20px 30px 50px;
+    border: solid rgb(87, 39, 0);
+    border-radius: 30px;
+
+}
+
+
+.textoImgFrente {
+    background-color:rgba(255, 166, 0, 0.603);
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    font-size: 2.3rem;
+    border: double black;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 30px 70px 30px 70px;
+}
+
+
+
+.flexart {
+    display: flex;
+    grid-area: seccion1;
+}
+
+.articFlecha {
+    text-align: center;
+    font-size: 30px;
+    margin: 60px;
+    grid-area: seccion2;
+}
+
+.h3antesflecha {
+    font-size: 28px;
+}
+
+.flecha {
+    width: 100px;
+    height: 100px;
+}
+
+.aArmaPedido {
+    border-radius: 30px;
+    border: double rgb(92, 41, 0);
+    border-width: 5px;
+    background-color: black;
+    color: rgba(255, 166, 0, 0.603);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.divTitInic {
+    grid-area: titulo;
+}
+
+
+.divInicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.7fr 1fr 1fr 1fr 0.1fr;
+    grid-template-areas: 
+    "header header header header"
+    "titulo titulo titulo titulo"
+    "seccion1 seccion1 seccion1 seccion1"
+    "seccion1 seccion1 seccion1 seccion1"
+    "seccion2 seccion2 seccion2 seccion2"
+    "footer footer footer footer";
+}
+
+
+
+
+/* inicio fin */
+
+/* armar pedido comienzo */
+
+.artap {
+    text-align: center;
+    background-image: url(../img/hamburguesa2.png);
+    background-size: 200px;
+    background-repeat: repeat;
+    grid-area: formap;
+}
+
+.boxtituloap {
+    grid-area: tituloap;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 60px;
+    
+}
+
+.h2ap {
+    font-size: 45px;
+    text-decoration: underline;
+    font-weight: bold;  
+    text-align: center;
+}
+
+.formap {
+    width: 50%;
+    margin-left: 25%;
+    padding: 30px 0 30px 0;
+    background-color: rgb(255, 212, 155);
+    border: 15px groove rgb(87, 39, 0);
+    font-size: 25px;
+}
+
+.campodeSeleccion {
+    font-size: 19px;
+}
+
+.titulodeseleccion {
+    margin: 10px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.pselectingred {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.botonformArmarPedido {
+    margin: 20px;
+    padding: 5px;
+    font-size: 30px;
+    color: rgba(255, 166, 0, 0.603);
+    background-color: black;
+}
+
+.artaptexto {
+    margin: 45px;
+    font-size: 25px;
+    grid-area: textap;
+}
+
+.divap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;;
+    grid-template-areas: 
+    "header header header header"
+    "tituloap tituloap tituloap tituloap"
+    "formap formap formap formap"
+    "textap textap textap textap"
+    "footer footer footer footer";
+}
+
+
+/* armar pedido fin */
+
+
+
+/* catering comienzo*/
+
+.h1Catering {
+    font-size: 55px;
+    text-align: center;
+}
+
+.h2Catering {
+    font-size: 40px;
+    text-decoration: underline;
+    margin: 0 30px 30px 30px;
+    text-align: center;
+}
+
+.imgYtabla {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: imgytabla;
+
+}
+
+.figImgComboFull {
+    display: flex;
+    justify-content: center;
+
+}
+
+.tablaPrecios {
+    padding: 0;
+    margin-right: 30px;
+    width: 500px;
+    border-collapse: collapse;
+    color: rgba(255, 166, 0, 0.603);
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+}
+
+th {
+    font-size: 50px;
+    background-color: rgb(43, 43, 43);
+}
+
+th, td {
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    border: solid rgba(255, 166, 0, 0.603);
+    background-color: rgb(43, 43, 43);
+}
+
+tr:hover td{
+    background-color: rgba(255, 166, 0, 0.603);
+    color: black;
+}
+
+
+.imgComboFull {
+    display: flex;
+    width: 95%;
+}
+
+.artlistInfo {
+    padding: 40px;
+    margin: 60px;
+    border: 20px groove rgb(100, 45, 0);
+    grid-area: articulocat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.listInfo {
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.subList li {
+    margin-left: 50px;
+} 
+
+.divContacto {
+    text-align: center;
+    margin: 60px;
+    grid-area: contacto;
+}
+
+.aContacto {
+    font-size: 35px;
+    border-radius: 30px;
+    border: double rgb(92, 41, 0);
+    border-width: 5px;
+    background-color: black;
+    color: rgba(255, 166, 0, 0.603);
+    padding: 10px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.titulosCatering {
+    grid-area: titulos;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.divCatering {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.5fr 1fr 1fr 0.4fr 0.1fr;
+    grid-template-areas: 
+    "header header header header"
+    "titulos titulos titulos titulos"
+    "imgytabla imgytabla imgytabla imgytabla"
+    "articulocat articulocat articulocat articulocat"
+    "contacto contacto contacto contacto"
+    "footer footer footer footer";
+}
+
+
+
+
+/* catering fin */
+
+/* Nosotros comienzo */
+
+.h1nosotros {
+    font-size: 50px;
+    text-decoration: underline;
+    margin: 0 30px 30px 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pNosotros {
+    text-align: center;
+    margin: 20px 0 60px 0;
+    font-size: 35px;
+}
+
+.idVideoNos {
+    text-align: center;
+    grid-area: video;
+} 
+
+.vidNosotros {
+    border: 15px ridge rgb(87, 39, 0);
+    width: 560px;
+    height: 315px;
+}
+
+.artNosotros {
+    text-align: center;
+    margin: 35px;
+}
+
+
+.textNosotros {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+}
+
+
+.abotonesNosotros {
+    border-radius: 30px;
+    border: double rgb(92, 41, 0);
+    border-width: 5px;
+    background-color: black;
+    color: rgba(255, 166, 0, 0.603);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 35px;
+    display: grid;
+    align-items: flex-end;
+    margin: 20px 100px 40px 100px;
+}
+
+.tituloNos {
+    grid-area: titulo;
+    height: 200px; 
+}
+
+.artNosotros1 {
+    grid-area: articulo1;
+    display: grid;
+    align-items: flex-end;
+}
+
+.artNosotros2 {
+    grid-area: articulo2;
+    display: grid;
+    align-items: flex-end;
+}
+
+.divNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 0.4fr 0.7fr 1fr 1fr 1fr 0.1fr;
+    row-gap: 0;
+    column-gap: 0;
+    grid-template-areas: 
+    "header header header header"
+    "titulo titulo titulo titulo"
+    "video video video video"
+    "articulo1 articulo1 articulo2 articulo2"
+    "articulo1 articulo1 articulo2 articulo2"
+    "footer footer footer footer";
+}
+
+
+/* Nosotros Fin */
+
+
+/* Contacto comienzo */
+
+
+
+.artcontactanos {
+    font-size: 30px;
+}
+
+.dejarConsulta {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formContacto {
+    text-align: center;
+}
+
+.h2Contacto {
+    font-size: 40px;
+    text-decoration: underline;
+    text-align: center;
+    margin: 15px;
+}
+
+.formContacto .enviar {
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    color: rgba(255, 166, 0, 0.603);
+    background-color: black;
+}
+
+.formContacto .resetear {
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    color: rgba(255, 166, 0, 0.603);
+    background-color: black;
+}
+
+.formContacto .CajasdeEscritura {
+    font-size: 20px;
+    background-color: rgb(255, 214, 153);
+}
+
+
+.sectContacto {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: contacto;
+}
+
+.divContContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header header" 
+    "contacto contacto contacto contacto"
+    "contacto contacto contacto contacto"
+    "footer footer footer footer";
+}
+
+/* contacto fin */
+
+
+/* footer comienzo */
+
+footer{
+    background-color: rgb(43, 43, 43);
+    color: rgba(255, 166, 0, 0.603);
+    height: 100px;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    grid-area: footer;
+}
+
+.logosRedesFlex {
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.redSocial {
+    width: 50px;
+    margin: 10px 60px 0px 60px;
+    display: flex;
+}
+
+.derechodeAutor {
+    margin: 0px 10px 0px 10px;
+    text-align: right;
+    position: relative;
+}
+
+/* footer fin */
+
+
+
+/* MEDIA QUERYS*/
+
+@media (max-width:980px){
+
+    nav ul li a {
+        font-size: 25px;
+        margin: 15px 17px 15px 15px;
+    }
+
+
+
+    /* inicio comienzo */
+
+    .divInicio {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.5fr 1fr 1fr 0.9fr 0.1fr;
+    grid-template-areas: 
+    "header header header"
+    "titulo titulo titulo"
+    "seccion1 seccion1 seccion1"
+    "seccion1 seccion1 seccion1"
+    "seccion2 seccion2 seccion2"
+    "footer footer footer";
+    }
+
+    
+    .flexart {
+        flex-direction: column;
+    }
+
+    .imagenBurger {
+        flex-direction: column;
+        padding: 20px ;
+    }
+
+    .textoImgFrente {
+        margin: 30px 80px 50px 80px;
+    }
+
+    .imgFrente {
+        margin: 30px 80px 30px 80px;
+        width: 60%;
+    }
+
+
+
+    /* inicio fin */
+
+
+    /* armarpedido comienzo */
+
+    .divap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;;
+        grid-template-areas: 
+        "header header header"
+        "tituloap tituloap tituloap"
+        "formap formap formap"
+        "textap textap textap"
+        "footer footer footer";
+    }
+    
+
+    /* armarpedido fin */
+
+    /* catering comienzo */
+
+    .divCatering {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
+        grid-template-areas: 
+        "header header header"
+        "titulos titulos titulos"
+        "imgytabla imgytabla imgytabla"
+        "articulocat articulocat articulocat"
+        "contacto contacto contacto"
+        "footer footer footer";
+    }
+         
+
+    .tablaPrecios {
+        font-size: 30px;
+    }
+
+
+
+    /* categin fin */
+
+
+
+
+
+    /* nosotros comiezo */
+
+    .divNosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.7fr 1fr 1fr 1fr 0.1fr;
+        row-gap: 0;
+        column-gap: 0;
+        grid-template-areas: 
+        "header header header"
+        "titulo titulo titulo"
+        "video video video"
+        "articulo1 articulo1 articulo1"
+        "articulo2 articulo2 articulo2"
+        "footer footer footer";
+    }
+
+
+    .h1nosotros {
+        margin: 20px 30px 30px 30px;
+    }
+
+    /* nosotros fin */
+
+
+    /* contacto comienzo */
+
+
+
+    /* contacto fin */
+
+
+    /* footer comienzo */
+
+    .derechodeAutor {
+        font-size: 15px;
+    }
+
+    .logosRedesFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    /* footer fin */
+
+}
+
+@media (max-width:830px){
+
+
+
+    nav ul li a {
+        font-size: 20px;
+        margin: 0px 10px 0px 10px;
+    } 
+
+    .logodb {
+        height: 65%;
+    }
+
+    /* inicio comienzo */
+
+    .divInicio {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.6fr 0.7fr 1fr 0.9fr 0.1fr;
+        grid-template-areas: 
+        "header header header"
+        "titulo titulo titulo"
+        "seccion1 seccion1 seccion1"
+        "seccion1 seccion1 seccion1"
+        "seccion2 seccion2 seccion2"
+        "footer footer footer";
+    }
+
+    .divTitInic {
+        align-self: center;
+    }
+
+    .h1Index {
+        font-size: 35px;
+    }
+
+    .h2Index {
+        font-size: 30px;
+    }
+
+    /* inicio fin */
+
+    /* armarpedido comienzo */
+
+    .divap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;
+        grid-template-areas: 
+        "header header"
+        "tituloap tituloap"
+        "formap formap"
+        "textap textap"
+        "footer footer";
+    }
+    
+    .botonformArmarPedido {
+        font-size: 23px;
+    }
+
+    .h2ap {
+        font-size: 40px;
+    }
+
+
+    /* armarpedido fin */
+
+    /* catering comienzo */
+
+    .divCatering {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.4fr 0.9fr 1fr 0.4fr 0.1fr;
+        grid-template-areas: 
+        "header header header"
+        "titulos titulos titulos"
+        "imgytabla imgytabla imgytabla"
+        "articulocat articulocat articulocat"
+        "contacto contacto contacto"
+        "footer footer footer";
+    }
+         
+
+    .imgComboFull {
+        margin-bottom: 30px;
+    }
+
+    .imgYtabla {
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+
+    .artlistInfo {
+        padding: 30px;
+    }
+
+    .listInfo {
+        font-size: 25px;
+    }
+
+
+    /* categing fin */
+
+
+
+    /* nosotros comienzo */
+
+
+    .h1nosotros {
+        font-size: 35px;
+    }
+
+    .pNosotros {
+        font-size: 30px;
+        margin: 20px 10px 20px 10px;
+    }
+
+    .artNosotros {
+        margin: 10px;
+    }
+
+    /* nosotros fin */
+
+    /* contacto comienzo */
+
+    .divContContacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 5fr 5fr 0.9fr;
+        grid-template-areas: 
+        "header header header" 
+        "contacto contacto contacto"
+        "contacto contacto contacto"
+        "footer footer footer";
+    }
+
+    .sectContacto {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+
+    /* contacto fin */
+
+    /* footer comienzo */
+
+    .logosRedesFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .derechodeAutor {
+        margin: 0px 10px 0px 10px;
+        font-size: 10px;
+    }
+
+    /* footer fin */
+
+}
+
+@media (max-width:630px){
+
+    nav ul li a {
+        font-size: 20px;
+        margin: 0px 8px 0px 8px;
+    } 
+
+
+    header {
+        height: 9%;
+    }
+
+
+    .logodb {
+        height: 55%;
+    }
+
+    /* inicio comienzo */
+
+    .divInicio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.5fr 0.7fr 1fr 0.9fr 0.1fr;
+        grid-template-areas: 
+        "header header"
+        "titulo titulo"
+        "seccion1 seccion1"
+        "seccion1 seccion1"
+        "seccion2 seccion2"
+        "footer footer";
+    }
+
+    .h1Index {
+        font-size: 38px;
+    }
+
+    .h2Index {
+        font-size: 30px ;
+    }
+
+    .textoImgFrente {
+        font-size: 1.8rem;
+    }
+
+    /* inicio fin */
+
+    .h1Index {
+        font-size: 38px;
+    }
+
+    /* armarpedido comienzo */
+    
+    .divap {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.7fr 5fr 0.7fr 0.2fr;
+        grid-template-areas: 
+        "header"
+        "tituloap "
+        "formap"
+        "textap"
+        "footer";
+    }
+
+    .h2ap {
+        font-size: 30px;
+    }
+
+    .artaptexto {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        margin: 40px;
+        font-size: 20px;
+    }
+    
+    .formap {
+        font-size: 20px;
+    }
+
+
+    .listInfo {
+        font-size: 20px;
+    }
+
+    .titulodeseleccion {
+        font-size: 32px;
+    } 
+
+    /* armarpedido fin */
+
+    /* catering comienzo */
+
+    .divCatering {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.1fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
+        grid-template-areas: 
+        "header header"
+        "titulos titulos"
+        "imgytabla imgytabla"
+        "articulocat articulocat"
+        "contacto contacto"
+        "footer footer";
+    }
+
+    .h1Catering {
+        font-size: 40px;
+    }
+
+    .h2Catering {
+        font-size: 30px;
+    }
+
+    .imgComboFull {
+        width: 60%;
+    }
+         
+    .tablaPrecios {
+        font-size: 25px;
+        width: 200px;
+    }    
+
+    .tablaPrecios th {
+        font-size: 35px;
+    }
+
+    .artlistInfo {
+        padding: 10px;
+        margin: 20px;
+    }
+    
+    /* catering fin */
+
+
+
+    /* nosotros comienzo */
+
+    .divNosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.3fr 0.6fr 0.9fr 1fr 1fr 0.1fr;
+        row-gap: 0;
+        column-gap: 0;
+        grid-template-areas: 
+        "header header"
+        "titulo titulo"
+        "video video"
+        "articulo1 articulo1"
+        "articulo2 articulo2"
+        "footer footer";
+    }
+    
+    .h1nosotros {
+        font-size: 38px;
+    }
+
+    
+
+    .abotonesNosotros {
+        font-size: 30px;
+    }
+
+
+    /* nosotros fin */
+
+    /* contacto comienzo */
+
+    .divContContacto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.8fr 5fr 5fr 0.9fr;
+        grid-template-areas: 
+        "header header" 
+        "contacto contacto"
+        "contacto contacto"
+        "footer footer";
+    }
+
+    /* contacto fin */
+
+}
+
+@media (max-width:500px){
+
+    nav ul li a {
+        font-size: 15px;
+        margin: 0px 6px 0px 6px;
+    } 
+
+
+    /* inicio comienzo */
+
+    .divInicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.5fr 0.7fr 1fr 0.5fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "seccion1"
+        "seccion1"
+        "seccion2"
+        "footer";
+    }
+
+
+    .textoImgFrente {
+        font-size: 1.5rem;
+    }
+
+    .articFlecha {
+        font-size: 25px;
+    }   
+
+    /* inicio fin */
+
+    /* armarpedido comienzo */
+
+    .divap {
+        grid-template-rows: 0.3fr 0.7fr 5fr 0.7fr 0.2fr;
+    }
+
+    .botonformArmarPedido {
+        font-size: 20px;
+    }
+
+
+
+
+    /* armarpedido fin */
+
+    /* catering comienzo */
+
+    .divCatering {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "titulos"
+        "imgytabla"
+        "articulocat"
+        "contacto"
+        "footer";
+    }
+
+    .artlistInfo {
+        padding: 0;
+        margin: 5px;
+    }
+
+
+    /* catering fin */
+
+
+    /* nosotros comienzo */
+
+    .divNosotros{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.5fr 0.6fr 0.5fr 1fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "video"
+        "articulo1"
+        "articulo2"
+        "footer";
+    }
+
+
+
+    /* nosotros fin */
+
+    /* contacto comienzo */
+
+    .divContContacto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.9fr 5fr 5fr 0.9fr;
+        grid-template-areas: 
+        "header" 
+        "contacto"
+        "contacto"
+        "footer";
+    }
+
+    
+    .h2Contacto {
+        font-size: 2rem;
+    }
+
+    .artcontact {
+        font-size: 1.5rem;
+    }
+
+    .formContacto .enviar {
+        font-size: 1rem;
+    }
+
+    .formContacto .resetear {
+        font-size: 1rem;
+    }
+
+
+    /* contacto fin */
+
+
+}
+
+@media (max-width:350px){
+
+
+    nav ul li a {
+        font-size: 14px;
+        margin: 0px 5px 0px 5px;
+    } 
+
+    /* inicio comienzo */
+
+    .divInicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.8fr 0.7fr 1fr 0.5fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "seccion1"
+        "seccion1"
+        "seccion2"
+        "footer";
+    }
+
+
+    .textoImgFrente {
+        margin: 30px 60px 30px 60px;
+    }
+
+    /* inicio fin */
+
+    /* armarpedido comienzo */
+
+    .h2ap {
+        font-size: 40px;
+    }
+
+
+    /* armarpedido fin */
+
+
+
+    /* nosotros comienzo */
+
+    .divNosotros{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.5fr 0.6fr 0.5fr 1fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "titulo"
+        "video"
+        "articulo1"
+        "articulo2"
+        "footer";
+    }
+
+    /* nosotros fin */
+
+    /* contacto comienzo */
+
+
+
+    /* contacto fin */
+
+}
