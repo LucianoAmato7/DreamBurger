@@ -375,8 +375,6 @@ tr:hover td{
 }
 
 
-
-
 /* catering fin */
 
 /* Nosotros comienzo */
@@ -571,6 +569,10 @@ footer{
 
 /* footer fin */
 
+.aAnim:hover {
+    background-color: rgba(255, 166, 0, 0.603);
+    color: black;
+}
 
 
 /* MEDIA QUERYS*/
