@@ -96,9 +96,13 @@ nav ul li a{
     margin: 30px 20px 30px 50px;
     border: solid rgb(87, 39, 0);
     border-radius: 30px;
-
+    transition-property: all;
+    transition-duration: 1s;
 }
 
+.imgFrente:hover {
+    transform: scale(1.2);
+}
 
 .textoImgFrente {
     background-color:rgba(255, 166, 0, 0.603);
@@ -567,12 +571,19 @@ footer{
     position: relative;
 }
 
+
+
 /* footer fin */
 
 .aAnim:hover {
     background-color: rgba(255, 166, 0, 0.603);
     color: black;
 }
+
+.animRedSoc:hover {
+    transform: scale(1.2);
+}
+
 
 
 /* MEDIA QUERYS*/
