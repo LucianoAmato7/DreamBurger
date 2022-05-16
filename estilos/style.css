@@ -93,17 +93,11 @@ nav ul li a{
 
 }
 
-.imgFrente {
-    width: 45%;
+.imgcaroucelInicio {
+    width: 70%; 
     margin: 30px 20px 30px 50px;
     border: solid rgb(87, 39, 0);
-    border-radius: 30px;
-    transition-property: all;
-    transition-duration: 1s;
-}
-
-.imgFrente:hover {
-    transform: scale(1.2);
+    
 }
 
 .textoImgFrente {
