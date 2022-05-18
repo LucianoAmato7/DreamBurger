@@ -12,51 +12,20 @@ body {
 }
 
 header{
-    background-color: rgb(43, 43, 43);
-    height: 13%;
     width: 100%;
     position: fixed;
-    top: 0;
-    display: flex;
-    padding: 10px;  
-    align-items: center;
-    display: grid;
+    z-index: 1000;
     grid-area: header;  
 }
 
-nav {
-    display: flex;  
-    width: 100%;
-    /* height: 90px; */
-    align-items: center;
-    justify-content: flex-end;
+
+.colorNav {
+    background-color: rgb(43, 43, 43);
 }
 
-nav ul {
-    display: flex;
-    padding-right: 15px;
+.seccionesNav {
+    margin: 10px;
 }
-
-nav ul li {
-    display: flex;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: rgba(255, 166, 0, 0.603);
-    font-size: 30px;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    margin: 20px 20px 20px 20px;
-}
-
-
-.logodb {
-    position: absolute;
-    margin: 0.5%;
-    height: 90%;
-}
-
 
 
 /* index comienzo */
@@ -91,17 +60,11 @@ nav ul li a{
 
 }
 
-.imgFrente {
-    width: 45%;
+.imgcaroucelInicio {
+    width: 70%; 
     margin: 30px 20px 30px 50px;
     border: solid rgb(87, 39, 0);
-    border-radius: 30px;
-    transition-property: all;
-    transition-duration: 1s;
-}
-
-.imgFrente:hover {
-    transform: scale(1.2);
+    
 }
 
 .textoImgFrente {
@@ -151,6 +114,7 @@ nav ul li a{
 
 .divTitInic {
     grid-area: titulo;
+    padding-top: 20px;
 }
 
 
@@ -196,6 +160,7 @@ nav ul li a{
     text-decoration: underline;
     font-weight: bold;  
     text-align: center;
+    text-transform: uppercase;
 }
 
 .formap {
@@ -260,6 +225,7 @@ nav ul li a{
 .h1Catering {
     font-size: 55px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .h2Catering {
@@ -267,6 +233,8 @@ nav ul li a{
     text-decoration: underline;
     margin: 0 30px 30px 30px;
     text-align: center;
+    text-transform: uppercase;
+    
 }
 
 .imgYtabla {
@@ -276,38 +244,13 @@ nav ul li a{
     align-items: center;
     justify-content: space-around;
     grid-area: imgytabla;
-
 }
 
 .figImgComboFull {
     display: flex;
     justify-content: center;
-
 }
 
-.tablaPrecios {
-    padding: 0;
-    margin-right: 30px;
-    width: 500px;
-    border-collapse: collapse;
-    color: rgba(255, 166, 0, 0.603);
-    display: flex;
-    font-size: 40px;
-    justify-content: center;
-}
-
-th {
-    font-size: 50px;
-    background-color: rgb(43, 43, 43);
-}
-
-th, td {
-    padding: 20px;
-    width: 500px;
-    text-align: center;
-    border: solid rgba(255, 166, 0, 0.603);
-    background-color: rgb(43, 43, 43);
-}
 
 tr:hover td{
     background-color: rgba(255, 166, 0, 0.603);
@@ -355,6 +298,7 @@ tr:hover td{
     padding: 10px;
     font-weight: bold;
     margin: 30px;
+    text-transform: uppercase;
 }
 
 .titulosCatering {
@@ -433,11 +377,12 @@ tr:hover td{
     display: grid;
     align-items: flex-end;
     margin: 20px 100px 40px 100px;
+    text-transform: uppercase;
 }
 
 .tituloNos {
     grid-area: titulo;
-    height: 200px; 
+    height: 200px;
 }
 
 .artNosotros1 {
@@ -455,7 +400,7 @@ tr:hover td{
 .divNosotros {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 0.4fr 0.7fr 1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.4fr 0.8fr 1fr 1fr 1fr 0.1fr;
     row-gap: 0;
     column-gap: 0;
     grid-template-areas: 
@@ -590,12 +535,6 @@ footer{
 
 @media (max-width:980px){
 
-    nav ul li a {
-        font-size: 25px;
-        margin: 15px 17px 15px 15px;
-    }
-
-
 
     /* inicio comienzo */
 
@@ -623,11 +562,6 @@ footer{
 
     .textoImgFrente {
         margin: 30px 80px 50px 80px;
-    }
-
-    .imgFrente {
-        margin: 30px 80px 30px 80px;
-        width: 60%;
     }
 
 
@@ -666,13 +600,11 @@ footer{
         "contacto contacto contacto"
         "footer footer footer";
     }
-         
 
-    .tablaPrecios {
-        font-size: 30px;
-    }
-
-
+    .imgYtabla {
+        flex-direction: column;
+        justify-content: space-between;
+    } 
 
     /* categin fin */
 
@@ -730,17 +662,6 @@ footer{
 
 @media (max-width:830px){
 
-
-
-    nav ul li a {
-        font-size: 20px;
-        margin: 0px 10px 0px 10px;
-    } 
-
-    .logodb {
-        height: 65%;
-    }
-
     /* inicio comienzo */
 
     .divInicio {
@@ -760,11 +681,11 @@ footer{
     }
 
     .h1Index {
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .h2Index {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     /* inicio fin */
@@ -814,10 +735,6 @@ footer{
         margin-bottom: 30px;
     }
 
-    .imgYtabla {
-        flex-direction: column;
-        justify-content: space-between;
-    } 
 
     .artlistInfo {
         padding: 30px;
@@ -889,22 +806,6 @@ footer{
 }
 
 @media (max-width:630px){
-
-    nav ul li a {
-        font-size: 20px;
-        margin: 0px 8px 0px 8px;
-    } 
-
-
-    header {
-        height: 9%;
-    }
-
-
-    .logodb {
-        height: 55%;
-    }
-
     /* inicio comienzo */
 
     .divInicio {
@@ -1004,15 +905,7 @@ footer{
     .imgComboFull {
         width: 60%;
     }
-         
-    .tablaPrecios {
-        font-size: 25px;
-        width: 200px;
-    }    
-
-    .tablaPrecios th {
-        font-size: 35px;
-    }
+          
 
     .artlistInfo {
         padding: 10px;
@@ -1071,11 +964,6 @@ footer{
 }
 
 @media (max-width:500px){
-
-    nav ul li a {
-        font-size: 15px;
-        margin: 0px 6px 0px 6px;
-    } 
 
 
     /* inicio comienzo */
@@ -1199,16 +1087,11 @@ footer{
 @media (max-width:350px){
 
 
-    nav ul li a {
-        font-size: 14px;
-        margin: 0px 5px 0px 5px;
-    } 
-
     /* inicio comienzo */
 
     .divInicio {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.8fr 0.7fr 1fr 0.5fr 0.1fr;
+        grid-template-rows: 0.3fr 0.6fr 0.7fr 1fr 0.5fr 0.1fr;
         grid-template-areas: 
         "header"
         "titulo"
