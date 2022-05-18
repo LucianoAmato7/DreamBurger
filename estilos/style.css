@@ -327,6 +327,11 @@ tr:hover td{
 
 /* Nosotros comienzo */
 
+.tituloNos {
+    height: 200px;
+    margin-top: 15%;
+}
+
 .h1nosotros {
     font-size: 50px;
     text-decoration: underline;
@@ -343,7 +348,6 @@ tr:hover td{
 
 .idVideoNos {
     text-align: center;
-    grid-area: video;
 } 
 
 .vidNosotros {
@@ -352,64 +356,12 @@ tr:hover td{
     height: 315px;
 }
 
-.artNosotros {
-    text-align: center;
-    margin: 35px;
-}
-
-
-.textNosotros {
-    text-align: center;
-    margin: 20px;
-    font-size: 24px;
-}
-
 
 .abotonesNosotros {
     border-radius: 30px;
     border: double rgb(92, 41, 0);
     border-width: 5px;
-    background-color: black;
-    color: rgba(255, 166, 0, 0.603);
-    padding: 10px;
-    font-weight: bold;
-    font-size: 35px;
-    display: grid;
-    align-items: flex-end;
-    margin: 20px 100px 40px 100px;
-    text-transform: uppercase;
-}
-
-.tituloNos {
-    grid-area: titulo;
-    height: 200px;
-}
-
-.artNosotros1 {
-    grid-area: articulo1;
-    display: grid;
-    align-items: flex-end;
-}
-
-.artNosotros2 {
-    grid-area: articulo2;
-    display: grid;
-    align-items: flex-end;
-}
-
-.divNosotros {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 0.4fr 0.8fr 1fr 1fr 1fr 0.1fr;
-    row-gap: 0;
-    column-gap: 0;
-    grid-template-areas: 
-    "header header header header"
-    "titulo titulo titulo titulo"
-    "video video video video"
-    "articulo1 articulo1 articulo2 articulo2"
-    "articulo1 articulo1 articulo2 articulo2"
-    "footer footer footer footer";
+    align-self: center;
 }
 
 
@@ -614,25 +566,7 @@ footer{
 
     /* nosotros comiezo */
 
-    .divNosotros {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.3fr 0.7fr 1fr 1fr 1fr 0.1fr;
-        row-gap: 0;
-        column-gap: 0;
-        grid-template-areas: 
-        "header header header"
-        "titulo titulo titulo"
-        "video video video"
-        "articulo1 articulo1 articulo1"
-        "articulo2 articulo2 articulo2"
-        "footer footer footer";
-    }
 
-
-    .h1nosotros {
-        margin: 20px 30px 30px 30px;
-    }
 
     /* nosotros fin */
 
@@ -751,6 +685,9 @@ footer{
 
     /* nosotros comienzo */
 
+    .tituloNos {
+        margin-top: 20%;
+    }
 
     .h1nosotros {
         font-size: 35px;
@@ -758,12 +695,8 @@ footer{
 
     .pNosotros {
         font-size: 30px;
-        margin: 20px 10px 20px 10px;
     }
 
-    .artNosotros {
-        margin: 10px;
-    }
 
     /* nosotros fin */
 
@@ -917,32 +850,10 @@ footer{
 
 
     /* nosotros comienzo */
-
-    .divNosotros {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.3fr 0.6fr 0.9fr 1fr 1fr 0.1fr;
-        row-gap: 0;
-        column-gap: 0;
-        grid-template-areas: 
-        "header header"
-        "titulo titulo"
-        "video video"
-        "articulo1 articulo1"
-        "articulo2 articulo2"
-        "footer footer";
-    }
     
     .h1nosotros {
         font-size: 38px;
     }
-
-    
-
-    .abotonesNosotros {
-        font-size: 30px;
-    }
-
 
     /* nosotros fin */
 
@@ -1032,18 +943,6 @@ footer{
 
     /* nosotros comienzo */
 
-    .divNosotros{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.5fr 0.6fr 0.5fr 1fr 0.1fr;
-        grid-template-areas: 
-        "header"
-        "titulo"
-        "video"
-        "articulo1"
-        "articulo2"
-        "footer";
-    }
-
 
 
     /* nosotros fin */
@@ -1120,18 +1019,6 @@ footer{
 
 
     /* nosotros comienzo */
-
-    .divNosotros{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 0.5fr 0.6fr 0.5fr 1fr 0.1fr;
-        grid-template-areas: 
-        "header"
-        "titulo"
-        "video"
-        "articulo1"
-        "articulo2"
-        "footer";
-    }
 
     /* nosotros fin */
 
