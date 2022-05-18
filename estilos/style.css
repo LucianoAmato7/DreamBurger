@@ -27,6 +27,7 @@ header{
     margin: 10px;
 }
 
+
 /* index comienzo */
 
 .h1Index {
@@ -297,6 +298,7 @@ tr:hover td{
     padding: 10px;
     font-weight: bold;
     margin: 30px;
+    text-transform: uppercase;
 }
 
 .titulosCatering {
@@ -375,11 +377,12 @@ tr:hover td{
     display: grid;
     align-items: flex-end;
     margin: 20px 100px 40px 100px;
+    text-transform: uppercase;
 }
 
 .tituloNos {
     grid-area: titulo;
-    height: 200px; 
+    height: 200px;
 }
 
 .artNosotros1 {
@@ -397,7 +400,7 @@ tr:hover td{
 .divNosotros {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 0.4fr 0.7fr 1fr 1fr 1fr 0.1fr;
+    grid-template-rows: 0.4fr 0.8fr 1fr 1fr 1fr 0.1fr;
     row-gap: 0;
     column-gap: 0;
     grid-template-areas: 
@@ -678,11 +681,11 @@ footer{
     }
 
     .h1Index {
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .h2Index {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     /* inicio fin */
@@ -1088,7 +1091,7 @@ footer{
 
     .divInicio {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.8fr 0.7fr 1fr 0.5fr 0.1fr;
+        grid-template-rows: 0.3fr 0.6fr 0.7fr 1fr 0.5fr 0.1fr;
         grid-template-areas: 
         "header"
         "titulo"
