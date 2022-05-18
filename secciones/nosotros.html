@@ -10,18 +10,17 @@
 </head>
 <body>
 
-    <div class="divNosotros">
 
-        <header>
+    <header>
 
-            <nav class="navbar navbar-expand-lg colorNav">
+        <nav class="navbar navbar-expand-lg colorNav">
                 <div class="container-fluid">
-                  <a class="navbar-brand w-25" href="../index.html">
-                      <img src="../img/logodb.jpg" class="w-50" alt="logoDreamBurger">
-                  </a>
-                  <button class="navbar-toggler btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand w-25" href="../index.html">
+                    <img src="../img/logodb.jpg" class="w-50" alt="logoDreamBurger">
+                </a>
+                <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                </button>
                     <div class="collapse navbar-collapse m-3 d-lg-flex justify-content-end" id="navbarNav">
                         <ul class="navbar-nav text-uppercase fs-3">
                             <li class="nav-item">
@@ -42,69 +41,93 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
+        </nav>
 
-        </header>
+    </header>
 
-    
+         
+    <div class="container">  
 
+        <div class="row">
 
-        <div class="tituloNos pt-lg-5"> 
+            <div class="col tituloNos"> 
 
-            <h1 class="h1nosotros">! SOMOS DREAM BURGER ¡</h1>
+                <h1 class="h1nosotros">! SOMOS DREAM BURGER ¡</h1>
 
-            <p class="pNosotros">Vivi una experiencia unica, eligiendo los ingredientes de tu Hamburguesa.</p>
-        
-        </div>
-
-        <div class="idVideoNos">
-
-             <iframe class="vidNosotros" src="https://www.youtube.com/embed/ZPEXn24XyTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!-- Video ejemplo -->
-
-        </div>
-   
-
-        <article class="artNosotros artNosotros1">
-
-            <p class="textNosotros">Somos Dream Burger, una hamburgueseria familiar de la Ciudad de Bueno Aires, ubicados en Palermo, calle xxx al xxx.
-                Te invitamos a ser protagonista en el desarrollo de tu Hamburguesa, con la particularidad de poder seleccionar los ingredientes de la misma.
-                Tambien contamos con un innovador servicio de delivery en el cual tambien podes seleccionar ingredientes y armar tu pedido a tu gusto.
-                No dejes pasar esta experiencia unica y disfruta de la Hamburguesa de tus sueños. 
-            </p>
-        
-            <a class="abotonesNosotros aAnim" href="armar.html">Pedir Delivery</a>
-
-        </article>
-
-        <article class="artNosotros artNosotros2">
-
-
-            <p class="textNosotros">Y para quienes lo deseen, poseemos un servicio de catering delicioso y economico, con combos a elegir, para agregarle un sabor unico a cualquier tipo de evento que lleves a cabo.
-                Te invitamos a hecharle un vistazo a nuestra seccion en donde podes obtener toda la informacion acerca del servicio de catering.
-            </p>
-
-            <a class="abotonesNosotros aAnim" href="catering.html">Servicio de Catering</a>
-
-
-        </article>
-
-  
-        <footer>
-
-            <div class="logosRedesFlex" >        
-                <a class="animRedSoc" href="https://www.instagram.com/"><img class="redSocial" src="../img/Instagram.png" alt="Insatgram"></a>
-                <a class="animRedSoc" href="https://www.facebook.com/"><img class="redSocial" src="../img/Facebook2.png" alt="Facebook"></a>
-                <a class="animRedSoc" href="https://www.twitter.com/"><img class="redSocial" src="../img/Twitter.png" alt="Twitter"></a>
+                <p class="pNosotros">Vivi una experiencia unica, eligiendo los ingredientes de tu Hamburguesa.</p>
+            
             </div>
 
-            <p class="derechodeAutor">Derechos de autor</p>
+        </div>    
+
+        <div class="row">
+
+            <div class="col idVideoNos">
+
+                <iframe class="vidNosotros" src="https://www.youtube.com/embed/ZPEXn24XyTQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- Video ejemplo -->
+
+            </div>
+          
+        </div>    
+   
+        <div class="row">
+
+            <div class="col accordion m-lg-5 m-md-2 m-sm-1 infonos text-center" id="accordionExample">
+
+                <div class="accordion-item text-bg-dark border border-dark">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button fs-2 bg-warning bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    CONOCE MAS SOBRE NOSOTROS
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body fs-3 text-warning d-flex flex-column m-1">
+                            Somos Dream Burger, una hamburgueseria familiar de la Ciudad de Bueno Aires, ubicados en Palermo, calle xxx al xxx.
+                            Te invitamos a ser protagonista en el desarrollo de tu Hamburguesa, con la particularidad de poder seleccionar los ingredientes de la misma.
+                            Tambien contamos con un innovador servicio de delivery en el cual tambien podes seleccionar ingredientes y armar tu pedido a tu gusto.
+                            No dejes pasar esta experiencia unica y disfruta de la Hamburguesa de tus sueños.
+                            <a href="./armar.html" class="abotonesNosotros w-50 btn btn-warning m-4 fs-3"><strong>D E L I V E R Y</strong></a>
+                        </div>
+                </div>
+                </div>
+
+                <div class="accordion-item text-bg-dark border border-dark">
+                <h2 class="accordion-header text-center" id="headingThree">
+                    <button class="accordion-button collapsed fs-2 bg-warning bg-gradient" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    NUESTRO CATERING
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body fs-3 text-warning d-flex flex-column m-1">
+                            Y para quienes lo deseen, poseemos un servicio de catering delicioso y economico, con combos a elegir, para agregarle un sabor unico a cualquier tipo de evento que lleves a cabo.
+                            Te invitamos a hecharle un vistazo a nuestra seccion en donde podes obtener toda la informacion acerca del servicio de catering.
+                            <a href="./catering.html" class="abotonesNosotros w-50 btn btn-warning m-4 fs-3"><strong>C A T E R I N G</strong></a>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+        </div>    
+
+    </div>
+
+    <footer>
+
+        <div class="logosRedesFlex" >        
+            <a class="animRedSoc" href="https://www.instagram.com/"><img class="redSocial" src="../img/Instagram.png" alt="Insatgram"></a>
+            <a class="animRedSoc" href="https://www.facebook.com/"><img class="redSocial" src="../img/Facebook2.png" alt="Facebook"></a>
+            <a class="animRedSoc" href="https://www.twitter.com/"><img class="redSocial" src="../img/Twitter.png" alt="Twitter"></a>
+        </div>
+
+        <p class="derechodeAutor">Derechos de autor</p>
 
 
-        </footer>
+    </footer>
 
-    </div>    
+      
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
