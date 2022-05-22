@@ -25,6 +25,12 @@ header{
 
 .seccionesNav {
     margin: 10px;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.seccionesNav:hover {
+    transform: scale(1.3);
 }
 
 
@@ -271,6 +277,7 @@ tr:hover td{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: linear-gradient(rgb(255, 238, 218), rgb(255, 208, 107));
 }
 
 .listInfo {
@@ -456,19 +463,26 @@ footer{
     align-items: center;
 }
 
-.redSocial {
-    width: 50px;
-    margin: 10px 60px 0px 60px;
-    display: flex;
-}
-
 .derechodeAutor {
     margin: 0px 10px 0px 10px;
     text-align: right;
     position: relative;
+    font-size: 1em;
 }
 
+.iconFooter {
+    font-size: 55px;
+    color: rgb(255, 166, 0);
+    margin-top: 10px;
+}
 
+.logosRedesFlex {
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-around;
+    height: 70%;
+}
 
 /* footer fin */
 
@@ -582,13 +596,8 @@ footer{
 
     .derechodeAutor {
         font-size: 15px;
-    }
+    } 
 
-    .logosRedesFlex {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
     /* footer fin */
 
@@ -723,16 +732,10 @@ footer{
 
     /* footer comienzo */
 
-    .logosRedesFlex {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .derechodeAutor {
+    /* .derechodeAutor {
         margin: 0px 10px 0px 10px;
         font-size: 10px;
-    }
+    } */
 
     /* footer fin */
 
@@ -817,7 +820,7 @@ footer{
     .divCatering {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.1fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
+        grid-template-rows: 0.2fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
         grid-template-areas: 
         "header header"
         "titulos titulos"
@@ -980,6 +983,15 @@ footer{
 
     /* contacto fin */
 
+    /* footer */
+
+    .iconFooter {
+        font-size: 45px;
+    }
+
+    .derechodeAutor {
+        font-size: 10px;
+    }
 
 }
 
