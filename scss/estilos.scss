@@ -1,40 +1,14 @@
+// variable aplicada en el color de letra de los botones navegables:
+$buttoncolor: rgba(255, 166, 0, 0.603); 
+
+@import "generales";
+@import "armar";
+@import "catering";
+@import "nosotros";
+@import "contactos";
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;1,200&family=Island+Moments&family=Oswald:wght@300&display=swap');
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-}
 
-
-body {
-    background-color: rgba(255, 166, 0, 0.603);
-    min-height: 100vh;
-}
-
-header{
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-    grid-area: header;  
-}
-
-
-.colorNav {
-    background-color: rgb(43, 43, 43);
-}
-
-.seccionesNav {
-    margin: 10px;
-    transition: all;
-    transition-duration: 0.5s;
-}
-
-.seccionesNav:hover {
-    transform: scale(1.3);
-}
-
-
-/* index comienzo */
+/* inicio comienzo */
 
 .h1Index {
     font-size: 55px;
@@ -46,10 +20,7 @@ header{
     text-decoration: underline;
     margin: 0 1cm 1cm 1cm;
     text-align: center;
-
 }
-
-
 
 .imagenBurger {
     background-image: url(../img/hamburguesa4.jpg);
@@ -85,8 +56,6 @@ header{
     margin: 30px 70px 30px 70px;
 }
 
-
-
 .flexart {
     display: flex;
     grid-area: seccion1;
@@ -113,7 +82,7 @@ header{
     border: double rgb(92, 41, 0);
     border-width: 5px;
     background-color: black;
-    color: rgba(255, 166, 0, 0.603);
+    color: $buttoncolor;
     padding: 10px;
     font-weight: bold;
 }
@@ -137,369 +106,11 @@ header{
     "footer footer footer footer";
 }
 
-
-
-
 /* inicio fin */
-
-/* armar pedido comienzo */
-
-.artap {
-    text-align: center;
-    background-image: url(../img/hamburguesa2.png);
-    background-size: 200px;
-    background-repeat: repeat;
-    grid-area: formap;
-}
-
-.boxtituloap {
-    grid-area: tituloap;
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    padding: 60px;
-    
-}
-
-.h2ap {
-    font-size: 45px;
-    text-decoration: underline;
-    font-weight: bold;  
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.formap {
-    width: 50%;
-    margin-left: 25%;
-    padding: 30px 0 30px 0;
-    background-color: rgb(255, 212, 155);
-    border: 15px groove rgb(87, 39, 0);
-    font-size: 25px;
-}
-
-.campodeSeleccion {
-    font-size: 19px;
-}
-
-.titulodeseleccion {
-    margin: 10px;
-    font-size: 40px;
-    text-decoration: underline;
-}
-
-.pselectingred {
-    margin: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.botonformArmarPedido {
-    margin: 20px;
-    padding: 5px;
-    font-size: 30px;
-    color: rgba(255, 166, 0, 0.603);
-    background-color: black;
-}
-
-.artaptexto {
-    margin: 45px;
-    font-size: 25px;
-    grid-area: textap;
-}
-
-.divap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;;
-    grid-template-areas: 
-    "header header header header"
-    "tituloap tituloap tituloap tituloap"
-    "formap formap formap formap"
-    "textap textap textap textap"
-    "footer footer footer footer";
-}
-
-
-/* armar pedido fin */
-
-
-
-/* catering comienzo*/
-
-.h1Catering {
-    font-size: 55px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.h2Catering {
-    font-size: 40px;
-    text-decoration: underline;
-    margin: 0 30px 30px 30px;
-    text-align: center;
-    text-transform: uppercase;
-    
-}
-
-.imgYtabla {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    grid-area: imgytabla;
-}
-
-.figImgComboFull {
-    display: flex;
-    justify-content: center;
-}
-
-
-tr:hover td{
-    background-color: rgba(255, 166, 0, 0.603);
-    color: black;
-}
-
-
-.imgComboFull {
-    display: flex;
-    width: 95%;
-}
-
-.artlistInfo {
-    padding: 40px;
-    margin: 60px;
-    border: 20px groove rgb(100, 45, 0);
-    grid-area: articulocat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(rgb(255, 238, 218), rgb(255, 208, 107));
-}
-
-.listInfo {
-    font-size: 30px;
-    margin-left: 30px;
-}
-
-.subList li {
-    margin-left: 50px;
-} 
-
-.divContacto {
-    text-align: center;
-    margin: 60px;
-    grid-area: contacto;
-}
-
-.aContacto {
-    font-size: 35px;
-    border-radius: 30px;
-    border: double rgb(92, 41, 0);
-    border-width: 5px;
-    background-color: black;
-    color: rgba(255, 166, 0, 0.603);
-    padding: 10px;
-    font-weight: bold;
-    margin: 30px;
-    text-transform: uppercase;
-}
-
-.titulosCatering {
-    grid-area: titulos;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: center;
-}
-
-.divCatering {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.5fr 1fr 1fr 0.4fr 0.1fr;
-    grid-template-areas: 
-    "header header header header"
-    "titulos titulos titulos titulos"
-    "imgytabla imgytabla imgytabla imgytabla"
-    "articulocat articulocat articulocat articulocat"
-    "contacto contacto contacto contacto"
-    "footer footer footer footer";
-}
-
-
-/* catering fin */
-
-/* Nosotros comienzo */
-
-.tituloNos {
-    height: 200px;
-    margin-top: 15%;
-}
-
-.h1nosotros {
-    font-size: 50px;
-    text-decoration: underline;
-    margin: 0 30px 30px 30px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.pNosotros {
-    text-align: center;
-    margin: 20px 0 60px 0;
-    font-size: 35px;
-}
-
-.idVideoNos {
-    text-align: center;
-} 
-
-.vidNosotros {
-    border: 15px ridge rgb(87, 39, 0);
-    width: 560px;
-    height: 315px;
-}
-
-
-.abotonesNosotros {
-    border-radius: 30px;
-    border: double rgb(92, 41, 0);
-    border-width: 5px;
-    align-self: center;
-}
-
-
-/* Nosotros Fin */
-
-
-/* Contacto comienzo */
-
-
-
-.artcontactanos {
-    font-size: 30px;
-}
-
-.dejarConsulta {
-    font-size: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.formContacto {
-    text-align: center;
-}
-
-.h2Contacto {
-    font-size: 40px;
-    text-decoration: underline;
-    text-align: center;
-    margin: 15px;
-}
-
-.formContacto .enviar {
-    margin: 10px;
-    padding: 5px;
-    font-size: 30px;
-    color: rgba(255, 166, 0, 0.603);
-    background-color: black;
-}
-
-.formContacto .resetear {
-    margin: 10px;
-    padding: 5px;
-    font-size: 30px;
-    color: rgba(255, 166, 0, 0.603);
-    background-color: black;
-}
-
-.formContacto .CajasdeEscritura {
-    font-size: 20px;
-    background-color: rgb(255, 214, 153);
-}
-
-
-.sectContacto {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
-    grid-area: contacto;
-}
-
-.divContContacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
-    grid-template-areas: 
-    "header header header header" 
-    "contacto contacto contacto contacto"
-    "contacto contacto contacto contacto"
-    "footer footer footer footer";
-}
-
-/* contacto fin */
-
-
-/* footer comienzo */
-
-footer{
-    background-color: rgb(43, 43, 43);
-    color: rgba(255, 166, 0, 0.603);
-    height: 100px;
-    margin-bottom: 0;
-    bottom: 0;
-    width: 100%;
-    grid-area: footer;
-}
-
-.logosRedesFlex {
-    display: flex;
-    align-content: flex-start;
-    align-items: center;
-}
-
-.derechodeAutor {
-    margin: 0px 10px 0px 10px;
-    text-align: right;
-    position: relative;
-    font-size: 1em;
-}
-
-.iconFooter {
-    font-size: 55px;
-    color: rgb(255, 166, 0);
-    margin-top: 10px;
-}
-
-.logosRedesFlex {
-    display: flex;
-    align-content: flex-start;
-    align-items: center;
-    justify-content: space-around;
-    height: 70%;
-}
-
-/* footer fin */
-
-.aAnim:hover {
-    background-color: rgba(255, 166, 0, 0.603);
-    color: black;
-}
-
-.animRedSoc:hover {
-    transform: scale(1.2);
-}
-
-
 
 /* MEDIA QUERYS*/
 
-@media (max-width:980px){
+@media (max-width:992px){
 
     .seccionesNav {
         transition: none;
@@ -581,35 +192,7 @@ footer{
         justify-content: space-between;
     } 
 
-    /* categin fin */
-
-
-
-
-
-    /* nosotros comiezo */
-
-
-
-    /* nosotros fin */
-
-
-    /* contacto comienzo */
-
-
-
-    /* contacto fin */
-
-
-    /* footer comienzo */
-
-    .derechodeAutor {
-        font-size: 15px;
-    } 
-
-
-    /* footer fin */
-
+    /* catering fin */
 }
 
 @media (max-width:830px){
@@ -736,18 +319,7 @@ footer{
         padding: 20px;
     }
 
-
     /* contacto fin */
-
-    /* footer comienzo */
-
-    /* .derechodeAutor {
-        margin: 0px 10px 0px 10px;
-        font-size: 10px;
-    } */
-
-    /* footer fin */
-
 }
 
 @media (max-width:630px){
@@ -859,8 +431,6 @@ footer{
     
     /* catering fin */
 
-
-
     /* nosotros comienzo */
     
     .h1nosotros {
@@ -884,6 +454,23 @@ footer{
 
     /* contacto fin */
 
+    /*footer comienzo*/
+
+    footer {
+        .logosRedesFlex {
+            a {
+                i{
+                    font-size: 40px;
+                }
+            }
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+
+    /*footer fin*/
+
 }
 
 @media (max-width:500px){
@@ -893,7 +480,7 @@ footer{
 
     .divInicio {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 0.5fr 0.7fr 1fr 0.5fr 0.1fr;
+        grid-template-rows: 0.2fr 0.5fr 0.7fr 1fr 0.5fr 0.1fr;
         grid-template-areas: 
         "header"
         "titulo"
@@ -917,15 +504,12 @@ footer{
     /* armarpedido comienzo */
 
     .divap {
-        grid-template-rows: 0.3fr 0.7fr 5fr 0.7fr 0.2fr;
+        grid-template-rows: 0.3fr 0.5fr 5fr 0.7fr 0.2fr;
     }
 
     .botonformArmarPedido {
         font-size: 20px;
     }
-
-
-
 
     /* armarpedido fin */
 
@@ -934,7 +518,7 @@ footer{
     .divCatering {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
+        grid-template-rows: 0.1fr 0.3fr 0.9fr 1fr 0.3fr 0.1fr;
         grid-template-areas: 
         "header"
         "titulos"
@@ -949,14 +533,14 @@ footer{
         margin: 5px;
     }
 
-
     /* catering fin */
-
 
     /* nosotros comienzo */
 
-
-
+    .vidNosotros {
+        width: 80%;
+    }
+    
     /* nosotros fin */
 
     /* contacto comienzo */
@@ -991,17 +575,6 @@ footer{
 
 
     /* contacto fin */
-
-    /* footer */
-
-    .iconFooter {
-        font-size: 45px;
-    }
-
-    .derechodeAutor {
-        font-size: 10px;
-    }
-
 }
 
 @media (max-width:350px){
@@ -1034,19 +607,5 @@ footer{
         font-size: 40px;
     }
 
-
     /* armarpedido fin */
-
-
-
-    /* nosotros comienzo */
-
-    /* nosotros fin */
-
-    /* contacto comienzo */
-
-
-
-    /* contacto fin */
-
 }

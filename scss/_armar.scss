@@ -1,0 +1,81 @@
+/* armar pedido comienzo */
+
+.artap {
+    text-align: center;
+    background-image: url(../img/hamburguesa2.png);
+    background-size: 200px;
+    background-repeat: repeat;
+    grid-area: formap;
+}
+
+.boxtituloap {
+    grid-area: tituloap;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    padding: 60px;
+    
+}
+
+.h2ap {
+    font-size: 45px;
+    text-decoration: underline;
+    font-weight: bold;  
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.formap {
+    width: 50%;
+    margin-left: 25%;
+    padding: 30px 0 30px 0;
+    background-color: rgb(255, 212, 155);
+    border: 15px groove rgb(87, 39, 0);
+    font-size: 25px;
+}
+
+.campodeSeleccion {
+    font-size: 19px;
+}
+
+.titulodeseleccion {
+    margin: 10px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.pselectingred {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.botonformArmarPedido {
+    margin: 20px;
+    padding: 5px;
+    font-size: 30px;
+    color: $buttoncolor;
+    background-color: black;
+}
+
+.artaptexto {
+    margin: 45px;
+    font-size: 25px;
+    grid-area: textap;
+}
+
+.divap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;;
+    grid-template-areas: 
+    "header header header header"
+    "tituloap tituloap tituloap tituloap"
+    "formap formap formap formap"
+    "textap textap textap textap"
+    "footer footer footer footer";
+}
+
+
+/* armar pedido fin */
