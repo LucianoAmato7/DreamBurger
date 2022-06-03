@@ -6,7 +6,7 @@
 
 
 body {
-    background-color: rgba(255, 166, 0, 0.603);
+    background-color: $buttoncolor;
     min-height: 100vh;
 }
 
@@ -41,7 +41,6 @@ header{
 
 footer{
     background-color: rgb(43, 43, 43);
-    color: rgba(255, 166, 0, 0.603);
     height: 100px;
     margin-bottom: 0;
     bottom: 0;
@@ -57,14 +56,18 @@ footer{
 
         a{
 
+            transition: all;
+            transition-duration: 0.3s;
+
             &:hover{
                 transform: scale(1.2);
             }
 
             i{
                 font-size: 55px;
-                color: rgb(255, 166, 0);
+                // color: rgb(255, 166, 0);
                 margin-top: 10px;
+                height: 10px;
             }
 
         }
@@ -76,8 +79,25 @@ footer{
         text-align: right;
         position: relative;
         font-size: 1em;
+        color: rgba(255, 166, 0, 0.603)
     }
 }
+
+// MAP para los colores de los iconos de redes sociales del footer
+
+$redes:(
+    instagram: rgb(250, 109, 191),
+    facebook: #3c5a99,
+    twitter: #00ACEE,
+);
+
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        color: $color;
+    }
+}
+
 
 /*footer fin*/
 

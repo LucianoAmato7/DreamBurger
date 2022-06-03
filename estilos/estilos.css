@@ -42,7 +42,6 @@ header {
 /*footer comienzo*/
 footer {
   background-color: #2b2b2b;
-  color: rgba(255, 166, 0, 0.603);
   height: 100px;
   margin-bottom: 0;
   bottom: 0;
@@ -67,6 +66,13 @@ footer .logosRedesFlex {
   height: 70%;
 }
 
+footer .logosRedesFlex a {
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 footer .logosRedesFlex a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -74,8 +80,8 @@ footer .logosRedesFlex a:hover {
 
 footer .logosRedesFlex a i {
   font-size: 55px;
-  color: #ffa600;
   margin-top: 10px;
+  height: 10px;
 }
 
 footer p {
@@ -83,6 +89,19 @@ footer p {
   text-align: right;
   position: relative;
   font-size: 1em;
+  color: rgba(255, 166, 0, 0.603);
+}
+
+.btn--instagram {
+  color: #fa6dbf;
+}
+
+.btn--facebook {
+  color: #3c5a99;
+}
+
+.btn--twitter {
+  color: #00ACEE;
 }
 
 /*footer fin*/
@@ -541,6 +560,8 @@ tr:hover td {
   -ms-grid-column-span: 4;
   grid-area: titulo;
   padding-top: 20px;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .divInicio {
