@@ -78,13 +78,23 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 }
 
 .aArmaPedido {
+    font-size: 35px;
     border-radius: 30px;
     border: double rgb(92, 41, 0);
     border-width: 5px;
-    background-color: black;
-    color: $buttoncolor;
     padding: 10px;
     font-weight: bold;
+    margin: 30px;
+    text-transform: uppercase;
+    // background-color: black;
+    // color: $buttoncolor;
+
+    @mixin colores ($color, $backcolor) {
+        color: $color;
+        background-color: $backcolor;
+    }
+
+    @include colores ($buttoncolor, black);
 }
 
 .divTitInic {
