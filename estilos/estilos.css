@@ -550,6 +550,11 @@ tr:hover td {
   font-size: 28px;
 }
 
+.h2antesflecha {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
 .flecha {
   width: 100px;
   height: 100px;
@@ -597,6 +602,7 @@ tr:hover td {
     transition: none;
     -webkit-transition-duration: none;
             transition-duration: none;
+    margin: 0;
   }
   .seccionesNav:hover {
     -webkit-transform: none;
@@ -606,8 +612,8 @@ tr:hover td {
   .divInicio {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.4fr 1fr 1fr 0.9fr 0.1fr;
-        grid-template-rows: 0.4fr 1fr 1fr 0.9fr 0.1fr;
+    -ms-grid-rows: 0.3fr 0.6fr 1fr 0.9fr 0.1fr;
+        grid-template-rows: 0.3fr 0.6fr 1fr 0.9fr 0.1fr;
         grid-template-areas: "header header header" "titulo titulo titulo" "seccion1 seccion1 seccion1" "seccion2 seccion2 seccion2" "footer footer footer";
   }
   .flexart {
@@ -624,6 +630,9 @@ tr:hover td {
     padding: 20px;
   }
   /* inicio fin */
+  .carritoMenu {
+    margin: 10px;
+  }
   /* catering comienzo */
   .divCatering {
     display: -ms-grid;
@@ -651,8 +660,8 @@ tr:hover td {
   .divInicio {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
-        grid-template-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
+    -ms-grid-rows: 0.3fr 0.7fr 0.8fr 0.9fr 0.1fr;
+        grid-template-rows: 0.3fr 0.7fr 0.8fr 0.9fr 0.1fr;
         grid-template-areas: "header header header" "titulo titulo titulo" "seccion1 seccion1 seccion1" "seccion2 seccion2 seccion2" "footer footer footer";
   }
   .divTitInic {
@@ -688,7 +697,7 @@ tr:hover td {
   .artlistInfo {
     padding: 30px;
   }
-  .listInfo {
+  .artlistInfo .listInfo {
     font-size: 25px;
   }
   /* categing fin */
@@ -728,8 +737,8 @@ tr:hover td {
   .divInicio {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
-        grid-template-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
+    -ms-grid-rows: 0.2fr 0.6fr 0.6fr 1.5fr 0.1fr;
+        grid-template-rows: 0.2fr 0.6fr 0.6fr 1.5fr 0.1fr;
         grid-template-areas: "header header" "titulo titulo" "seccion1 seccion1" "seccion2 seccion2" "footer footer";
   }
   .h1Index {
@@ -783,6 +792,10 @@ tr:hover td {
     padding: 10px;
     margin: 20px;
   }
+  .artlistInfo .listInfo {
+    font-size: 20px;
+    margin: 3px;
+  }
   /* catering fin */
   /* nosotros comienzo */
   .h1nosotros {
@@ -815,8 +828,8 @@ tr:hover td {
   .divInicio {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 0.2fr 0.8fr 1fr 0.5fr 0.1fr;
-        grid-template-rows: 0.2fr 0.8fr 1fr 0.5fr 0.1fr;
+    -ms-grid-rows: 0.2fr 0.6fr 0.8fr 0.5fr 0.1fr;
+        grid-template-rows: 0.2fr 0.6fr 0.8fr 0.5fr 0.1fr;
         grid-template-areas: "header" "titulo" "seccion1" "seccion2" "footer";
   }
   .articFlecha {
@@ -836,6 +849,17 @@ tr:hover td {
   .artlistInfo {
     padding: 0;
     margin: 5px;
+  }
+  .artlistInfo .listInfo {
+    font-size: 15px;
+    margin: 3px;
+  }
+  .imgComboFull {
+    margin-bottom: 10px;
+  }
+  .aContacto {
+    font-size: 25px;
+    margin: 10px;
   }
   /* catering fin */
   /* nosotros comienzo */
@@ -874,8 +898,8 @@ tr:hover td {
   .divInicio {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 0.2fr 0.6fr 0.7fr 0.5fr 0.1fr;
-        grid-template-rows: 0.2fr 0.6fr 0.7fr 0.5fr 0.1fr;
+    -ms-grid-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
         grid-template-areas: "header" "titulo" "seccion1" "seccion2" "footer";
   }
   .aArmaPedido, .carritoMenu, .aContacto {

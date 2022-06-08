@@ -60,6 +60,11 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     font-size: 28px;
 }
 
+.h2antesflecha {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
 .flecha {
     width: 100px;
     height: 100px;
@@ -113,6 +118,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     .seccionesNav {
         transition: none;
         transition-duration: none;
+        margin: 0;
     }
     
     .seccionesNav:hover {
@@ -124,7 +130,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .divInicio {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 1fr 1fr 0.9fr 0.1fr;
+    grid-template-rows: 0.3fr 0.6fr 1fr 0.9fr 0.1fr;
     grid-template-areas: 
     "header header header"
     "titulo titulo titulo"
@@ -144,6 +150,10 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     }
 
     /* inicio fin */
+
+    .carritoMenu {
+        margin: 10px;
+    }
 
     /* catering comienzo */
 
@@ -174,7 +184,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .divInicio {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
+        grid-template-rows: 0.3fr 0.7fr 0.8fr 0.9fr 0.1fr;
         grid-template-areas: 
         "header header header"
         "titulo titulo titulo"
@@ -229,10 +239,12 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .artlistInfo {
         padding: 30px;
-    }
 
-    .listInfo {
-        font-size: 25px;
+        .listInfo {
+            font-size: 25px;
+
+        }
+
     }
 
 
@@ -283,7 +295,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .divInicio {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
+        grid-template-rows: 0.2fr 0.6fr 0.6fr 1.5fr 0.1fr;
         grid-template-areas: 
         "header header"
         "titulo titulo"
@@ -354,6 +366,14 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     .artlistInfo {
         padding: 10px;
         margin: 20px;
+
+    
+        .listInfo {
+            font-size: 20px;
+            margin: 3px;
+        }
+    
+        
     }
     
     /* catering fin */
@@ -407,7 +427,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .divInicio {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.8fr 1fr 0.5fr 0.1fr;
+        grid-template-rows: 0.2fr 0.6fr 0.8fr 0.5fr 0.1fr;
         grid-template-areas: 
         "header"
         "titulo"
@@ -440,6 +460,21 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     .artlistInfo {
         padding: 0;
         margin: 5px;
+
+        .listInfo {
+            font-size: 15px;
+            margin: 3px;
+        }
+
+    }
+
+    .imgComboFull {
+        margin-bottom: 10px;
+    }
+
+    .aContacto {
+        font-size: 25px;
+        margin: 10px;
     }
 
     /* catering fin */
@@ -494,7 +529,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .divInicio {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.6fr 0.7fr 0.5fr 0.1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
         grid-template-areas: 
         "header"
         "titulo"
