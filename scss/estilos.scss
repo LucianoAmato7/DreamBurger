@@ -38,22 +38,10 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 }
 
 .imgcaroucelInicio {
-    width: 70%; 
+    width: 50%; 
     margin: 30px 20px 30px 50px;
     border: solid rgb(87, 39, 0);
     
-}
-
-.textoImgFrente {
-    background-color:rgba(255, 166, 0, 0.603);
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    font-size: 2.3rem;
-    border: double black;
-    border-radius: 30px;
-    padding: 5px;
-    margin: 30px 70px 30px 70px;
 }
 
 .flexart {
@@ -86,8 +74,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     font-weight: bold;
     margin: 30px;
     text-transform: uppercase;
-    // background-color: black;
-    // color: $buttoncolor;
+    text-decoration: none;
 
     @mixin colores ($color, $backcolor) {
         color: $color;
@@ -137,11 +124,10 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .divInicio {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 0.5fr 1fr 1fr 0.9fr 0.1fr;
+    grid-template-rows: 0.4fr 1fr 1fr 0.9fr 0.1fr;
     grid-template-areas: 
     "header header header"
     "titulo titulo titulo"
-    "seccion1 seccion1 seccion1"
     "seccion1 seccion1 seccion1"
     "seccion2 seccion2 seccion2"
     "footer footer footer";
@@ -157,31 +143,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
         padding: 20px ;
     }
 
-    .textoImgFrente {
-        margin: 30px 80px 50px 80px;
-    }
-
-
-
     /* inicio fin */
-
-
-    /* armarpedido comienzo */
-
-    .divap {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;;
-        grid-template-areas: 
-        "header header header"
-        "tituloap tituloap tituloap"
-        "formap formap formap"
-        "textap textap textap"
-        "footer footer footer";
-    }
-    
-
-    /* armarpedido fin */
 
     /* catering comienzo */
 
@@ -212,11 +174,10 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .divInicio {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.3fr 0.6fr 0.7fr 1fr 0.9fr 0.1fr;
+        grid-template-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
         grid-template-areas: 
         "header header header"
         "titulo titulo titulo"
-        "seccion1 seccion1 seccion1"
         "seccion1 seccion1 seccion1"
         "seccion2 seccion2 seccion2"
         "footer footer footer";
@@ -236,30 +197,14 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     /* inicio fin */
 
-    /* armarpedido comienzo */
-
-    .divap {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;
-        grid-template-areas: 
-        "header header"
-        "tituloap tituloap"
-        "formap formap"
-        "textap textap"
-        "footer footer";
-    }
-    
-    .botonformArmarPedido {
-        font-size: 23px;
-    }
+    /* menu comienzo */
 
     .h2ap {
         font-size: 40px;
     }
 
 
-    /* armarpedido fin */
+    /* menu fin */
 
     /* catering comienzo */
 
@@ -338,11 +283,10 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .divInicio {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.3fr 0.5fr 0.7fr 1fr 0.9fr 0.1fr;
+        grid-template-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
         grid-template-areas: 
         "header header"
         "titulo titulo"
-        "seccion1 seccion1"
         "seccion1 seccion1"
         "seccion2 seccion2"
         "footer footer";
@@ -356,30 +300,15 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
         font-size: 30px ;
     }
 
-    .textoImgFrente {
-        font-size: 1.8rem;
+    .imgcaroucelInicio {
+        width: 75%;
     }
+
 
     /* inicio fin */
 
-    .h1Index {
-        font-size: 38px;
-    }
-
-    /* armarpedido comienzo */
+    /* menu comienzo */
     
-    .divap {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.7fr 5fr 0.7fr 0.2fr;
-        grid-template-areas: 
-        "header"
-        "tituloap "
-        "formap"
-        "textap"
-        "footer";
-    }
-
     .h2ap {
         font-size: 30px;
     }
@@ -391,21 +320,8 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
         margin: 40px;
         font-size: 20px;
     }
-    
-    .formap {
-        font-size: 20px;
-    }
 
-
-    .listInfo {
-        font-size: 20px;
-    }
-
-    .titulodeseleccion {
-        font-size: 32px;
-    } 
-
-    /* armarpedido fin */
+    /* menu fin */
 
     /* catering comienzo */
 
@@ -491,19 +407,13 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .divInicio {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.5fr 0.7fr 1fr 0.5fr 0.1fr;
+        grid-template-rows: 0.2fr 0.8fr 1fr 0.5fr 0.1fr;
         grid-template-areas: 
         "header"
         "titulo"
         "seccion1"
-        "seccion1"
         "seccion2"
         "footer";
-    }
-
-
-    .textoImgFrente {
-        font-size: 1.5rem;
     }
 
     .articFlecha {
@@ -511,18 +421,6 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     }   
 
     /* inicio fin */
-
-    /* armarpedido comienzo */
-
-    .divap {
-        grid-template-rows: 0.3fr 0.5fr 5fr 0.7fr 0.2fr;
-    }
-
-    .botonformArmarPedido {
-        font-size: 20px;
-    }
-
-    /* armarpedido fin */
 
     /* catering comienzo */
 
@@ -550,6 +448,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .vidNosotros {
         width: 80%;
+        margin: 20px 0 20px 0;
     }
     
     /* nosotros fin */
@@ -595,28 +494,26 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     .divInicio {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 0.6fr 0.7fr 1fr 0.5fr 0.1fr;
+        grid-template-rows: 0.2fr 0.6fr 0.7fr 0.5fr 0.1fr;
         grid-template-areas: 
         "header"
         "titulo"
-        "seccion1"
         "seccion1"
         "seccion2"
         "footer";
     }
 
-
-    .textoImgFrente {
-        margin: 30px 60px 30px 60px;
+    .aArmaPedido {
+        font-size: 23px;
     }
 
     /* inicio fin */
 
-    /* armarpedido comienzo */
+    /* menu comienzo */
 
     .h2ap {
         font-size: 40px;
     }
 
-    /* armarpedido fin */
+    /* menu fin */
 }

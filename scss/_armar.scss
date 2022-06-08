@@ -1,15 +1,13 @@
-/* armar pedido comienzo */
+/* menu pedido comienzo */
 
 .artap {
     text-align: center;
     background-image: url(../img/hamburguesa2.png);
     background-size: 200px;
     background-repeat: repeat;
-    grid-area: formap;
 }
 
 .boxtituloap {
-    grid-area: tituloap;
     display: flex;
     align-self: center;
     justify-content: center;
@@ -23,6 +21,7 @@
     font-weight: bold;  
     text-align: center;
     text-transform: uppercase;
+    margin-top: 18%;
 }
 
 .formap {
@@ -32,10 +31,6 @@
     background-color: rgb(255, 212, 155);
     border: 15px groove rgb(87, 39, 0);
     font-size: 25px;
-}
-
-.campodeSeleccion {
-    font-size: 19px;
 }
 
 .titulodeseleccion {
@@ -51,6 +46,7 @@
     text-decoration: underline;
 }
 
+
 .botonformArmarPedido {
     margin: 20px;
     padding: 5px;
@@ -62,20 +58,49 @@
 .artaptexto {
     margin: 45px;
     font-size: 25px;
-    grid-area: textap;
-}
-
-.divap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;;
-    grid-template-areas: 
-    "header header header header"
-    "tituloap tituloap tituloap tituloap"
-    "formap formap formap formap"
-    "textap textap textap textap"
-    "footer footer footer footer";
 }
 
 
-/* armar pedido fin */
+.titcards {
+    display: flex;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    text-decoration: underline;
+}
+
+.cardshb {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    height: 23rem;
+    margin: 15px 0px 15px 0px;
+}
+
+.selectdeli {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.animImg {
+    transition: all;
+    transition-duration: 0.8s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+}
+
+.carritoMenu {
+    @extend .aArmaPedido;
+}
+
+/* Menu fin */

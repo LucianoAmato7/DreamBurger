@@ -111,23 +111,15 @@ footer p {
   color: black;
 }
 
-/* armar pedido comienzo */
+/* menu pedido comienzo */
 .artap {
   text-align: center;
   background-image: url(../img/hamburguesa2.png);
   background-size: 200px;
   background-repeat: repeat;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: formap;
 }
 
 .boxtituloap {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: tituloap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,6 +137,7 @@ footer p {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 18%;
 }
 
 .formap {
@@ -154,10 +147,6 @@ footer p {
   background-color: #ffd49b;
   border: 15px groove #572700;
   font-size: 25px;
-}
-
-.campodeSeleccion {
-  font-size: 19px;
 }
 
 .titulodeseleccion {
@@ -184,23 +173,70 @@ footer p {
 .artaptexto {
   margin: 45px;
   font-size: 25px;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: textap;
 }
 
-.divap {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;
-      grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;
-      grid-template-areas: "header header header header" "tituloap tituloap tituloap tituloap" "formap formap formap formap" "textap textap textap textap" "footer footer footer footer";
+.titcards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px;
+  text-decoration: underline;
 }
 
-/* armar pedido fin */
+.cardshb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  height: 23rem;
+  margin: 15px 0px 15px 0px;
+}
+
+.selectdeli {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.animImg {
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.animImg:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/* Menu fin */
 /* catering comienzo*/
 .titulosCatering {
   -ms-grid-row: 2;
@@ -484,21 +520,9 @@ tr:hover td {
 }
 
 .imgcaroucelInicio {
-  width: 70%;
+  width: 50%;
   margin: 30px 20px 30px 50px;
   border: solid #572700;
-}
-
-.textoImgFrente {
-  background-color: rgba(255, 166, 0, 0.603);
-  font-weight: bold;
-  text-align: center;
-  color: black;
-  font-size: 2.3rem;
-  border: double black;
-  border-radius: 30px;
-  padding: 5px;
-  margin: 30px 70px 30px 70px;
 }
 
 .flexart {
@@ -531,7 +555,7 @@ tr:hover td {
   height: 100px;
 }
 
-.aArmaPedido, .aContacto {
+.aArmaPedido, .carritoMenu, .aContacto {
   font-size: 35px;
   border-radius: 30px;
   border: double #5c2900;
@@ -540,6 +564,7 @@ tr:hover td {
   font-weight: bold;
   margin: 30px;
   text-transform: uppercase;
+  text-decoration: none;
   color: rgba(255, 166, 0, 0.603);
   background-color: black;
 }
@@ -581,9 +606,9 @@ tr:hover td {
   .divInicio {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.4fr 0.5fr 1fr 1fr 0.9fr 0.1fr;
-        grid-template-rows: 0.4fr 0.5fr 1fr 1fr 0.9fr 0.1fr;
-        grid-template-areas: "header header header" "titulo titulo titulo" "seccion1 seccion1 seccion1" "seccion1 seccion1 seccion1" "seccion2 seccion2 seccion2" "footer footer footer";
+    -ms-grid-rows: 0.4fr 1fr 1fr 0.9fr 0.1fr;
+        grid-template-rows: 0.4fr 1fr 1fr 0.9fr 0.1fr;
+        grid-template-areas: "header header header" "titulo titulo titulo" "seccion1 seccion1 seccion1" "seccion2 seccion2 seccion2" "footer footer footer";
   }
   .flexart {
     -webkit-box-orient: vertical;
@@ -598,21 +623,7 @@ tr:hover td {
             flex-direction: column;
     padding: 20px;
   }
-  .textoImgFrente {
-    margin: 30px 80px 50px 80px;
-  }
   /* inicio fin */
-  /* armarpedido comienzo */
-  .divap {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;
-        grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;
-        grid-template-areas: "header header header" "tituloap tituloap tituloap" "formap formap formap" "textap textap textap" "footer footer footer";
-  }
-  /* armarpedido fin */
   /* catering comienzo */
   .divCatering {
     display: -ms-grid;
@@ -640,9 +651,9 @@ tr:hover td {
   .divInicio {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.3fr 0.6fr 0.7fr 1fr 0.9fr 0.1fr;
-        grid-template-rows: 0.3fr 0.6fr 0.7fr 1fr 0.9fr 0.1fr;
-        grid-template-areas: "header header header" "titulo titulo titulo" "seccion1 seccion1 seccion1" "seccion1 seccion1 seccion1" "seccion2 seccion2 seccion2" "footer footer footer";
+    -ms-grid-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
+        grid-template-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
+        grid-template-areas: "header header header" "titulo titulo titulo" "seccion1 seccion1 seccion1" "seccion2 seccion2 seccion2" "footer footer footer";
   }
   .divTitInic {
     -ms-flex-item-align: center;
@@ -656,23 +667,11 @@ tr:hover td {
     font-size: 35px;
   }
   /* inicio fin */
-  /* armarpedido comienzo */
-  .divap {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;
-        grid-template-rows: 0.3fr 0.8fr 5fr 0.6fr 0.2fr;
-        grid-template-areas: "header header" "tituloap tituloap" "formap formap" "textap textap" "footer footer";
-  }
-  .botonformArmarPedido {
-    font-size: 23px;
-  }
+  /* menu comienzo */
   .h2ap {
     font-size: 40px;
   }
-  /* armarpedido fin */
+  /* menu fin */
   /* catering comienzo */
   .divCatering {
     display: -ms-grid;
@@ -729,9 +728,9 @@ tr:hover td {
   .divInicio {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 0.3fr 0.5fr 0.7fr 1fr 0.9fr 0.1fr;
-        grid-template-rows: 0.3fr 0.5fr 0.7fr 1fr 0.9fr 0.1fr;
-        grid-template-areas: "header header" "titulo titulo" "seccion1 seccion1" "seccion1 seccion1" "seccion2 seccion2" "footer footer";
+    -ms-grid-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
+        grid-template-rows: 0.3fr 0.7fr 1fr 0.9fr 0.1fr;
+        grid-template-areas: "header header" "titulo titulo" "seccion1 seccion1" "seccion2 seccion2" "footer footer";
   }
   .h1Index {
     font-size: 38px;
@@ -739,23 +738,11 @@ tr:hover td {
   .h2Index {
     font-size: 30px;
   }
-  .textoImgFrente {
-    font-size: 1.8rem;
+  .imgcaroucelInicio {
+    width: 75%;
   }
   /* inicio fin */
-  .h1Index {
-    font-size: 38px;
-  }
-  /* armarpedido comienzo */
-  .divap {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 0.2fr 0.7fr 5fr 0.7fr 0.2fr;
-        grid-template-rows: 0.2fr 0.7fr 5fr 0.7fr 0.2fr;
-        grid-template-areas: "header" "tituloap " "formap" "textap" "footer";
-  }
+  /* menu comienzo */
   .h2ap {
     font-size: 30px;
   }
@@ -772,16 +759,7 @@ tr:hover td {
     margin: 40px;
     font-size: 20px;
   }
-  .formap {
-    font-size: 20px;
-  }
-  .listInfo {
-    font-size: 20px;
-  }
-  .titulodeseleccion {
-    font-size: 32px;
-  }
-  /* armarpedido fin */
+  /* menu fin */
   /* catering comienzo */
   .divCatering {
     display: -ms-grid;
@@ -837,26 +815,14 @@ tr:hover td {
   .divInicio {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 0.2fr 0.5fr 0.7fr 1fr 0.5fr 0.1fr;
-        grid-template-rows: 0.2fr 0.5fr 0.7fr 1fr 0.5fr 0.1fr;
-        grid-template-areas: "header" "titulo" "seccion1" "seccion1" "seccion2" "footer";
-  }
-  .textoImgFrente {
-    font-size: 1.5rem;
+    -ms-grid-rows: 0.2fr 0.8fr 1fr 0.5fr 0.1fr;
+        grid-template-rows: 0.2fr 0.8fr 1fr 0.5fr 0.1fr;
+        grid-template-areas: "header" "titulo" "seccion1" "seccion2" "footer";
   }
   .articFlecha {
     font-size: 25px;
   }
   /* inicio fin */
-  /* armarpedido comienzo */
-  .divap {
-    -ms-grid-rows: 0.3fr 0.5fr 5fr 0.7fr 0.2fr;
-        grid-template-rows: 0.3fr 0.5fr 5fr 0.7fr 0.2fr;
-  }
-  .botonformArmarPedido {
-    font-size: 20px;
-  }
-  /* armarpedido fin */
   /* catering comienzo */
   .divCatering {
     display: -ms-grid;
@@ -875,6 +841,7 @@ tr:hover td {
   /* nosotros comienzo */
   .vidNosotros {
     width: 80%;
+    margin: 20px 0 20px 0;
   }
   /* nosotros fin */
   /* contacto comienzo */
@@ -907,18 +874,18 @@ tr:hover td {
   .divInicio {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 0.3fr 0.6fr 0.7fr 1fr 0.5fr 0.1fr;
-        grid-template-rows: 0.3fr 0.6fr 0.7fr 1fr 0.5fr 0.1fr;
-        grid-template-areas: "header" "titulo" "seccion1" "seccion1" "seccion2" "footer";
+    -ms-grid-rows: 0.2fr 0.6fr 0.7fr 0.5fr 0.1fr;
+        grid-template-rows: 0.2fr 0.6fr 0.7fr 0.5fr 0.1fr;
+        grid-template-areas: "header" "titulo" "seccion1" "seccion2" "footer";
   }
-  .textoImgFrente {
-    margin: 30px 60px 30px 60px;
+  .aArmaPedido, .carritoMenu, .aContacto {
+    font-size: 23px;
   }
   /* inicio fin */
-  /* armarpedido comienzo */
+  /* menu comienzo */
   .h2ap {
     font-size: 40px;
   }
-  /* armarpedido fin */
+  /* menu fin */
 }
 /*# sourceMappingURL=estilos.css.map */
