@@ -10,103 +10,30 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
 /* inicio comienzo */
 
-.h1Index {
-    font-size: 55px;
-    text-align: center;
+.carouselInicio {
+    margin-top: 10.8%;
 }
 
 .h2Index {
-    font-size: 40px;
-    text-decoration: underline;
-    margin: 0 1cm 1cm 1cm;
-    text-align: center;
-}
-
-.imagenBurger {
-    background-image: url(../img/hamburguesa4.jpg);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    border-top: solid rgb(87, 39, 1);
-    border-bottom: solid rgb(87, 39, 1);
-    border-width: 5px;
-    padding: 100px 0px 100px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.imgcaroucelInicio {
-    width: 50%; 
-    margin: 30px 20px 30px 50px;
-    border: solid rgb(87, 39, 0);
-    
-}
-
-.flexart {
-    display: flex;
-    grid-area: seccion1;
-}
-
-.articFlecha {
-    text-align: center;
-    font-size: 30px;
-    margin: 60px;
-    grid-area: seccion2;
-}
-
-.h3antesflecha {
-    font-size: 28px;
-}
-
-.h2antesflecha {
-    font-size: 28px;
-    margin-bottom: 25px;
-}
-
-.flecha {
-    width: 100px;
-    height: 100px;
-}
-
-.aArmaPedido {
-    font-size: 35px;
-    border-radius: 30px;
-    border: double rgb(92, 41, 0);
-    border-width: 5px;
-    padding: 10px;
-    font-weight: bold;
+    font-size: 3rem;
     margin: 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    @mixin colores ($color, $backcolor) {
-        color: $color;
-        background-color: $backcolor;
-    }
-
-    @include colores ($buttoncolor, black);
-}
-
-.divTitInic {
-    grid-area: titulo;
-    padding-top: 20px;
+    padding: 3px;
+    text-align: center;
+    border-top: solid 4px black;
+    border-bottom: solid 4px black;
+    border-radius: 10px;
     align-self: center;
+    text-shadow: 0px 3px 5px;
 }
 
-
-.divInicio {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 0.7fr 1fr 1fr 1fr 0.1fr;
-    grid-template-areas: 
-    "header header header header"
-    "titulo titulo titulo titulo"
-    "seccion1 seccion1 seccion1 seccion1"
-    "seccion1 seccion1 seccion1 seccion1"
-    "seccion2 seccion2 seccion2 seccion2"
-    "footer footer footer footer";
+.h3index {
+    font-size: 28px;
+    text-shadow: 1px 2px 4px;
+    @extend.h2Index;
+}
+    
+.imgSecciones {
+    border-radius: 15px;
 }
 
 /* inicio fin */
@@ -123,36 +50,6 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     
     .seccionesNav:hover {
         transform: none;
-    }
-    
-
-    /* inicio comienzo */
-
-    .divInicio {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.6fr 1fr 0.9fr 0.1fr;
-    grid-template-areas: 
-    "header header header"
-    "titulo titulo titulo"
-    "seccion1 seccion1 seccion1"
-    "seccion2 seccion2 seccion2"
-    "footer footer footer";
-    }
-
-    
-    .flexart {
-        flex-direction: column;
-    }
-
-    .imagenBurger {
-        flex-direction: column;
-        padding: 20px ;
-    }
-
-    /* inicio fin */
-
-    .carritoMenu {
-        margin: 10px;
     }
 
     /* catering comienzo */
@@ -182,39 +79,15 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     /* inicio comienzo */
 
-    .divInicio {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.3fr 0.7fr 0.8fr 0.9fr 0.1fr;
-        grid-template-areas: 
-        "header header header"
-        "titulo titulo titulo"
-        "seccion1 seccion1 seccion1"
-        "seccion2 seccion2 seccion2"
-        "footer footer footer";
-    }
-
-    .divTitInic {
-        align-self: center;
-    }
-
-    .h1Index {
-        font-size: 40px;
-    }
-
     .h2Index {
         font-size: 35px;
     }
 
-    /* inicio fin */
-
-    /* menu comienzo */
-
-    .h2ap {
-        font-size: 40px;
+    .h3index {
+        font-size: 20px;
     }
 
-
-    /* menu fin */
+    /* inicio fin */
 
     /* catering comienzo */
 
@@ -268,62 +141,27 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
 
     /* nosotros fin */
-
-    /* contacto comienzo */
-
-    .divContContacto {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 5fr 5fr 0.9fr;
-        grid-template-areas: 
-        "header header header" 
-        "contacto contacto contacto"
-        "contacto contacto contacto"
-        "footer footer footer";
-    }
-
-    .sectContacto {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    /* contacto fin */
 }
 
 @media (max-width:630px){
+
     /* inicio comienzo */
-
-    .divInicio {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.2fr 0.6fr 0.6fr 1.5fr 0.1fr;
-        grid-template-areas: 
-        "header header"
-        "titulo titulo"
-        "seccion1 seccion1"
-        "seccion2 seccion2"
-        "footer footer";
-    }
-
-    .h1Index {
-        font-size: 38px;
-    }
 
     .h2Index {
         font-size: 30px ;
     }
 
-    .imgcaroucelInicio {
-        width: 75%;
+    .h3index {
+        font-size: 19px;
     }
 
+    .titcards {
+        font-size: 30px;
+    }
 
     /* inicio fin */
 
     /* menu comienzo */
-    
-    .h2ap {
-        font-size: 30px;
-    }
 
     .artaptexto {
         display: flex;
@@ -386,21 +224,6 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     /* nosotros fin */
 
-    /* contacto comienzo */
-
-    .divContContacto {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.8fr 5fr 5fr 0.9fr;
-        grid-template-areas: 
-        "header header" 
-        "contacto contacto"
-        "contacto contacto"
-        "footer footer";
-    }
-
-    /* contacto fin */
-
     /*footer comienzo*/
 
     footer {
@@ -422,25 +245,13 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
 @media (max-width:500px){
 
+    // inicio comienzo
 
-    /* inicio comienzo */
-
-    .divInicio {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 0.6fr 0.8fr 0.5fr 0.1fr;
-        grid-template-areas: 
-        "header"
-        "titulo"
-        "seccion1"
-        "seccion2"
-        "footer";
+    .carouselInicio {
+        margin-top: 13%;
     }
 
-    .articFlecha {
-        font-size: 25px;
-    }   
-
-    /* inicio fin */
+    // inicio fin
 
     /* catering comienzo */
 
@@ -487,66 +298,26 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     }
     
     /* nosotros fin */
-
-    /* contacto comienzo */
-
-    .divContContacto {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.9fr 5fr 5fr 0.9fr;
-        grid-template-areas: 
-        "header" 
-        "contacto"
-        "contacto"
-        "footer";
-    }
-
-    
-    .h2Contacto {
-        font-size: 2rem;
-    }
-
-    .artcontact {
-        font-size: 1.5rem;
-    }
-
-    .formContacto .enviar {
-        font-size: 1rem;
-    }
-
-    .formContacto .resetear {
-        font-size: 1rem;
-    }
-
-
-    /* contacto fin */
 }
 
 @media (max-width:350px){
 
+    // inicio comienzo
 
-    /* inicio comienzo */
-
-    .divInicio {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
-        grid-template-areas: 
-        "header"
-        "titulo"
-        "seccion1"
-        "seccion2"
-        "footer";
+    .h2Index {
+        font-size: 25px;
+        margin-bottom: 10px;
     }
 
-    .aArmaPedido {
-        font-size: 23px;
+    .h3index {
+        font-size: 18px;
     }
 
-    /* inicio fin */
+    // inicio fin
 
     /* menu comienzo */
 
-    .h2ap {
+    .h1ap {
         font-size: 40px;
     }
 

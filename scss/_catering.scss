@@ -81,7 +81,17 @@ tr:hover td{
 }
 
 .aContacto {
-    @extend .aArmaPedido;
+    font-size: 35px;
+    border-radius: 30px;
+    border: double rgb(92, 41, 0);
+    border-width: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $buttoncolor;
+    background-color: black;
 }
 
 .divCatering {

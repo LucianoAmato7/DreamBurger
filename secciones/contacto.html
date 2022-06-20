@@ -4,138 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Somos Dream Burger, dejanos tu consulta llenando un breve formulario. Contactanos mediantes nuestros multiples medios de comunicacion disponibles. Accede a nuestras redes y numeros de contacto.">
+    <meta name="description" content="Somos Dream Burger, dejanos tu consulta llenando un breve formulario. Contactanos mediantes nuestros multiples medios de comunicación disponibles. Accede a nuestras redes y números de contacto.">
     <meta name="keywords" content="dreamburger, hamburguesa, hamburgueseria, comida, local, palermo, pedido, pedir, delivery, contacto, contactanos, formulario, consulta">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <title>DreamBurger | Contacto</title>
 </head>
 <body>
 
-    <div class="divContContacto">
+    <header>
 
-        <header>
-
-            <nav class="navbar navbar-expand-lg colorNav">
-                <div class="container-fluid">
-                  <a class="navbar-brand w-25" href="../index.html">
-                      <img src="../img/logodb.jpg" class="w-50" alt="logoDreamBurger">
-                  </a>
-                  <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                    <div class="collapse navbar-collapse m-3 d-lg-flex justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav text-uppercase fs-3">
-                            <li class="nav-item">
-                                <a class="nav-link active text-warning seccionesNav" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-warning seccionesNav" href="./armar.html">Menú</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-warning seccionesNav" href="./catering.html">Catering</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-warning seccionesNav" href="./nosotros.html">Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-warning seccionesNav" href="./contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-warning seccionesNav" href="#">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-lg backNav">
+            <div class="container-fluid">
+                <a class="navbar-brand w-25 p-0" href="../index.html">
+                    <img src="../img/logondb.png" class="imglogo" alt="logoDreamBurger">
+                </a>
+                <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse m-3 d-lg-flex justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav text-uppercase fs-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning seccionesNav" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning seccionesNav" href="./armar.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning seccionesNav" href="./catering.html">Catering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning seccionesNav" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning seccionesNav" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-warning seccionesNav" href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-
-        </header>
-
-        
-        <section class="sectContacto">
-
-            <article class="dejarConsulta artcontact">
-
-                <h2 class="h2Contacto">Dejanos tu consulta</h2>
-
-                <form class="formContacto" action="#">
-                    
-                    <label for="Nombre">Nombre:
-                        <input class="CajasdeEscritura" type="text" placeholder="Ingrese su nombre" name="Nombre">
-                    </label> <br>
-
-                    <label for="email">Email:
-                        <input class="CajasdeEscritura" type="email" placeholder="aaa@gmail.com"  name="email">
-                    </label> <br>
-
-                    <label for="telefono">Numero de telefono:
-                        <input class="CajasdeEscritura" type="number" placeholder="11 0000-0000" name="telefono">
-                    </label> <br>   
-
-                    <label for="Consulta"> Consulta:<br>
-                        <textarea class="CajasdeEscritura" placeholder="Escriba aquí"></textarea>
-                    </label>
-
-                    <div>Queres recibir info sobre nosotros?
-                        <input type="checkbox" name="acepta" value="1">
-                    </div>
-
-                    <input class="enviar aAnim" type="submit" value="ENVIAR">
-                    <input class="resetear aAnim" type="reset" value="RESETEAR">
-
-                </form> 
-
-
-            </article>
-
-            <article class="artcontactanos artcontact">
-
-                <h2 class="h2Contacto">Contactanos</h2>
-
-                <ul>
-                    <li>Numero de telefono fijo.</li>   
-                    <li>Numero de wpp.</li>
-                    <li>Email.</li>
-                    <li>Red social instagram.</li>
-                    <li>Red social facebook.</li>
-                    <li>Red social twitter.</li>
-                </ul>
-
-
-            </article>
-
-           
-
-        </section>   
-
-        <footer>
-
-            <div class="logosRedesFlex" >  
-
-                <a href="#">
-                    <i class="fa-brands fa-instagram btn--instagram"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-facebook-square btn--facebook"></i>
-                </a>
-
-                <a href="#">
-                    <i class="fa-brands fa-twitter-square btn--twitter"></i>
-                </a>
-
             </div>
+        </nav>
 
-            <p>Derechos de autor</p>
+    </header>
+ 
+    <div class="container containerCont">  
+         
+        <div class="row">
+            
+            <div class="col">
 
+                <form class="formcont mb-4 shadow-lg p-4" data-aos="zoom-in">
+                    <h2 class="mb-4 fs-1 h2form">Dejanos tu consulta</h2>
+                    <div class="mb-3">
+                        <label for="nombreCompleto" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" placeholder="ej: Dream Burger" id="nombreCompleto">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" placeholder="ej: dreamburger@gmail.com" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="numero" class="form-label">Numero de teléfono</label>
+                        <input type="number" class="form-control" placeholder="ej: 11 1234-5678" id="numero">
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" placeholder="Comentario:" id="cajaDeConsulta"></textarea>
+                        <label for="cajaDeConsulta">Comentario:</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="recibirInfo">
+                        <label class="form-check-label" for="recibirInfo">Recibir información.</label>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-warning fs-5">Enviar</button>
+                        <button type="reset" class="btn btn-warning fs-5 resertc">Resetear</button>
+                    </div>        
+                </form>
 
-        </footer>
+            </div>    
+        
+        </div>
 
-    </div>
+    </div>    
+
+    <footer>
+
+        <div class="logosRedesFlex" >  
+
+            <a href="https://www.instagram.com/"target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook-square"></i>
+            </a>
+
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-twitter-square"></i>
+            </a>
+
+            <a href="https://wa.me/541138752819" target="_blank">
+                <i class="fa-brands fa-whatsapp-square"></i>
+            </a>
+
+        </div>
+
+        <p>Derechos de autor</p>
+
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>

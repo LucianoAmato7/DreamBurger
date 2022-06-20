@@ -1,74 +1,42 @@
 /* menu pedido comienzo */
 
-.artap {
-    text-align: center;
-    background-image: url(../img/hamburguesa2.png);
-    background-size: 200px;
-    background-repeat: repeat;
+.containerMenu {
+    padding-top: 15%;
 }
 
-.boxtituloap {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    padding: 60px;
-    
-}
-
-.h2ap {
-    font-size: 45px;
-    text-decoration: underline;
+.h1ap {
+    font-size: 3rem;
     font-weight: bold;  
     text-align: center;
     text-transform: uppercase;
-    margin-top: 18%;
+    text-shadow: 0px 3px 5px;
 }
 
-.formap {
-    width: 50%;
-    margin-left: 25%;
-    padding: 30px 0 30px 0;
-    background-color: rgb(255, 212, 155);
-    border: 15px groove rgb(87, 39, 0);
-    font-size: 25px;
+.h2ap {
+    font-size: 2rem;
+    font-weight: bold;  
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 3px 5px;
+    margin: 15px;
 }
 
-.titulodeseleccion {
-    margin: 10px;
-    font-size: 40px;
-    text-decoration: underline;
-}
-
-.pselectingred {
-    margin: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-
-.botonformArmarPedido {
-    margin: 20px;
-    padding: 5px;
-    font-size: 30px;
-    color: $buttoncolor;
-    background-color: black;
+.titcards {
+    display: flex;
+    font-size: 2.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border-top: solid 4px black;
+    border-bottom: solid 4px black;
+    border-radius: 10px;
+    text-transform: uppercase ;
 }
 
 .artaptexto {
     margin: 45px;
     font-size: 25px;
-}
-
-
-.titcards {
-    display: flex;
-    font-size: 3rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-    text-decoration: underline;
 }
 
 .cardshb {
@@ -100,7 +68,17 @@
 }
 
 .carritoMenu {
-    @extend .aArmaPedido;
+    font-size: 35px;
+    border-radius: 30px;
+    border: double rgb(92, 41, 0);
+    border-width: 5px;
+    padding: 10px;
+    font-weight: bold;
+    margin: 30px 0 50px 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $buttoncolor;
+    background-color: black;
 }
 
 /* Menu fin */
