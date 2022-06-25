@@ -2,7 +2,7 @@
 $buttoncolor: rgba(255, 166, 0, 0.603); 
 
 @import "generales";
-@import "armar";
+@import "menu";
 @import "catering";
 @import "nosotros";
 @import "contactos";
@@ -14,7 +14,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     margin-top: 10.8%;
 }
 
-.h2Index {
+.h1Index {
     font-size: 3rem;
     margin: 30px;
     padding: 3px;
@@ -26,14 +26,21 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     text-shadow: 0px 3px 5px;
 }
 
-.h3index {
+.h2index {
     font-size: 28px;
     text-shadow: 1px 2px 4px;
-    @extend.h2Index;
+    @extend.h1Index;
 }
     
 .imgSecciones {
     border-radius: 15px;
+    transition: all;
+    transition-duration: 0.3s;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+
 }
 
 /* inicio fin */
@@ -73,17 +80,27 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     } 
 
     /* catering fin */
+
+    // contacto comienzo
+
+    .colCont {
+        border-left: none;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+
+    // contacto fin
 }
 
 @media (max-width:830px){
 
     /* inicio comienzo */
 
-    .h2Index {
+    .h1Index {
         font-size: 35px;
     }
 
-    .h3index {
+    .h2index {
         font-size: 20px;
     }
 
@@ -147,11 +164,11 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     /* inicio comienzo */
 
-    .h2Index {
+    .h1Index {
         font-size: 30px ;
     }
 
-    .h3index {
+    .h2index {
         font-size: 19px;
     }
 
@@ -304,12 +321,12 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     // inicio comienzo
 
-    .h2Index {
+    .h1Index {
         font-size: 25px;
         margin-bottom: 10px;
     }
 
-    .h3index {
+    .h2index {
         font-size: 18px;
     }
 
