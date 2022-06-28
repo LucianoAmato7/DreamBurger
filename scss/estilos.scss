@@ -1,5 +1,5 @@
-// variable aplicada en el color de letra de los botones navegables:
-$buttoncolor: rgba(255, 166, 0, 0.603); 
+// variable aplicada en el color de letra de los botones navegables en las secciones: "menu" y "catering". 
+$buttoncolor: #ffc107;
 
 @import "generales";
 @import "menu";
@@ -16,19 +16,14 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
 .h1Index {
     font-size: 3rem;
-    margin: 30px;
-    padding: 3px;
-    text-align: center;
     border-top: solid 4px black;
     border-bottom: solid 4px black;
     border-radius: 10px;
-    align-self: center;
-    text-shadow: 0px 3px 5px;
+    text-shadow: 2px 2px 5px;
 }
 
 .h2index {
     font-size: 28px;
-    text-shadow: 1px 2px 4px;
     @extend.h1Index;
 }
     
@@ -38,7 +33,7 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     transition-duration: 0.3s;
 
     &:hover{
-        transform: scale(1.05);
+        transform: scale(1.04);
     }
 
 }
@@ -58,28 +53,6 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     .seccionesNav:hover {
         transform: none;
     }
-
-    /* catering comienzo */
-
-    .divCatering {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.2fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
-        grid-template-areas: 
-        "header header header"
-        "titulos titulos titulos"
-        "imgytabla imgytabla imgytabla"
-        "articulocat articulocat articulocat"
-        "contacto contacto contacto"
-        "footer footer footer";
-    }
-
-    .imgYtabla {
-        flex-direction: column;
-        justify-content: space-between;
-    } 
-
-    /* catering fin */
 
     // contacto comienzo
 
@@ -106,56 +79,23 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     /* inicio fin */
 
-    /* catering comienzo */
+    // catering comienzo
 
-    .divCatering {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.1fr 0.4fr 0.9fr 1fr 0.4fr 0.1fr;
-        grid-template-areas: 
-        "header header header"
-        "titulos titulos titulos"
-        "imgytabla imgytabla imgytabla"
-        "articulocat articulocat articulocat"
-        "contacto contacto contacto"
-        "footer footer footer";
-    }
-         
-
-    .imgComboFull {
-        margin-bottom: 30px;
+    .carouselCatering {
+        margin-top: 11.7%;
     }
 
-
-    .artlistInfo {
-        padding: 30px;
-
-        .listInfo {
-            font-size: 25px;
-
-        }
-
-    }
-
-
-    /* categing fin */
-
-
+    // catering fin
 
     /* nosotros comienzo */
 
-    .tituloNos {
-        margin-top: 20%;
+    .containerNos {
+        padding-top: 20%;
     }
 
-    .h1nosotros {
-        font-size: 35px;
+    .abotonesNosotros {
+        width: 50%;
     }
-
-    .pNosotros {
-        font-size: 30px;
-    }
-
 
     /* nosotros fin */
 }
@@ -190,57 +130,6 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
 
     /* menu fin */
 
-    /* catering comienzo */
-
-    .divCatering {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.2fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
-        grid-template-areas: 
-        "header header"
-        "titulos titulos"
-        "imgytabla imgytabla"
-        "articulocat articulocat"
-        "contacto contacto"
-        "footer footer";
-    }
-
-    .h1Catering {
-        font-size: 40px;
-    }
-
-    .h2Catering {
-        font-size: 30px;
-    }
-
-    .imgComboFull {
-        width: 60%;
-    }
-          
-
-    .artlistInfo {
-        padding: 10px;
-        margin: 20px;
-
-    
-        .listInfo {
-            font-size: 20px;
-            margin: 3px;
-        }
-    
-        
-    }
-    
-    /* catering fin */
-
-    /* nosotros comienzo */
-    
-    .h1nosotros {
-        font-size: 38px;
-    }
-
-    /* nosotros fin */
-
     /*footer comienzo*/
 
     footer {
@@ -265,53 +154,35 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     // inicio comienzo
 
     .carouselInicio {
-        margin-top: 13%;
+        margin-top: 12.9%;
     }
 
     // inicio fin
 
-    /* catering comienzo */
+    // menu comienzo
 
-    .divCatering {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.3fr 0.9fr 1fr 0.3fr 0.1fr;
-        grid-template-areas: 
-        "header"
-        "titulos"
-        "imgytabla"
-        "articulocat"
-        "contacto"
-        "footer";
+    .containerMenu {
+        padding-top: 18%;
     }
 
-    .artlistInfo {
-        padding: 0;
-        margin: 5px;
+    // menu fin
 
-        .listInfo {
-            font-size: 15px;
-            margin: 3px;
-        }
+    // catering comienzo
 
+    .carouselCatering {
+        margin-top: 12.9%;
     }
 
-    .imgComboFull {
-        margin-bottom: 10px;
-    }
-
-    .aContacto {
-        font-size: 25px;
-        margin: 10px;
-    }
-
-    /* catering fin */
+    // catering fin
 
     /* nosotros comienzo */
 
-    .vidNosotros {
-        width: 80%;
-        margin: 20px 0 20px 0;
+    .h1nosotros {
+        font-size: 2.1rem;
+    }
+
+    .abotonesNosotros {
+        width: 70%;
     }
     
     /* nosotros fin */
@@ -335,8 +206,16 @@ $buttoncolor: rgba(255, 166, 0, 0.603);
     /* menu comienzo */
 
     .h1ap {
-        font-size: 40px;
+        font-size: 2.4rem;
     }
 
     /* menu fin */
+
+    // nosotros comienzo
+
+    .h1nosotros {
+        font-size: 1.5rem;
+    }
+
+    // nosotros fin
 }

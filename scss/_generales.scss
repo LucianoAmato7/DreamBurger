@@ -6,7 +6,7 @@
 
 
 body {
-    background-color: $buttoncolor;
+    background-color: rgba(255, 166, 0, 0.603);
     min-height: 100vh;
 }
 
@@ -15,8 +15,7 @@ body {
 header{
     width: 100%;
     position: fixed;
-    z-index: 1000;
-    grid-area: header;  
+    z-index: 1000; 
 }
 
 .backNav {
@@ -56,7 +55,6 @@ footer{
     height: 100px;
     margin-bottom: 0;
     width: 100%;
-    grid-area: footer;
 
     .logosRedesFlex {
         display: flex;

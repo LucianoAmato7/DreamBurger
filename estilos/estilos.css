@@ -15,10 +15,6 @@ header {
   width: 100%;
   position: fixed;
   z-index: 1000;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: header;
 }
 
 .backNav {
@@ -59,10 +55,6 @@ footer {
   height: 100px;
   margin-bottom: 0;
   width: 100%;
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: footer;
 }
 
 footer .logosRedesFlex {
@@ -113,7 +105,7 @@ footer p {
   color: black;
 }
 
-/* menu pedido comienzo */
+/* menu comienzo */
 .containerMenu {
   padding-top: 15%;
 }
@@ -214,79 +206,37 @@ footer p {
   margin: 30px 0 50px 0px;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgba(255, 166, 0, 0.603);
+  color: #ffc107;
   background-color: black;
+}
+
+.offCanv {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fbdb71), to(white));
+  background: linear-gradient(#fbdb71, white);
+}
+
+.offCanv .bodyCarrito ul {
+  list-style: none;
+}
+
+.offCanv .bodyCarrito p {
+  margin-left: 9%;
 }
 
 /* Menu fin */
 /* catering comienzo*/
-.titulosCatering {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: titulos;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.carouselCatering {
+  margin-top: 10.8%;
 }
 
-.h2Catering {
-  font-size: 40px;
-  text-decoration: underline;
-  margin: 0 30px 30px 30px;
+.h1Cat {
+  font-style: italic;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px;
   text-align: center;
-  text-transform: uppercase;
-}
-
-.h1Catering {
-  font-size: 55px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.imgYtabla {
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: imgytabla;
-}
-
-.figImgComboFull {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.imgComboFull {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 95%;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  border-radius: 10px;
 }
 
 tr:hover td {
@@ -295,43 +245,14 @@ tr:hover td {
 }
 
 .artlistInfo {
-  padding: 40px;
-  margin: 60px;
-  border: 20px groove #642d00;
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: articulocat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  border: 8px groove #642d00;
+  border-radius: 20px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffeeda), to(#ffd06b));
   background: linear-gradient(#ffeeda, #ffd06b);
 }
 
-.artlistInfo .listInfo {
-  font-size: 30px;
-  margin-left: 30px;
-}
-
-.artlistInfo .listInfo .subList li {
-  margin-left: 50px;
-}
-
 .divContacto {
   text-align: center;
-  margin: 60px;
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: contacto;
 }
 
 .aContacto {
@@ -344,18 +265,8 @@ tr:hover td {
   margin: 30px;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgba(255, 166, 0, 0.603);
+  color: #ffc107;
   background-color: black;
-}
-
-.divCatering {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 0.2fr 0.5fr 1fr 1fr 0.4fr 0.1fr;
-      grid-template-rows: 0.2fr 0.5fr 1fr 1fr 0.4fr 0.1fr;
-      grid-template-areas: "header header header header" "titulos titulos titulos titulos" "imgytabla imgytabla imgytabla imgytabla" "articulocat articulocat articulocat articulocat" "contacto contacto contacto contacto" "footer footer footer footer";
 }
 
 /* catering fin */
@@ -364,32 +275,26 @@ tr:hover td {
   padding-top: 15%;
 }
 
-.tituloNos {
-  height: 200px;
-}
-
 .h1nosotros {
-  font-size: 50px;
-  text-decoration: underline;
-  margin: 0 30px 30px 30px;
+  font-size: 3rem;
   text-align: center;
   font-weight: bold;
-}
-
-.pNosotros {
-  text-align: center;
-  margin: 20px 0 60px 0;
-  font-size: 35px;
-}
-
-.idVideoNos {
-  text-align: center;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-radius: 15px;
+  text-shadow: 2px 2px 5px;
 }
 
 .vidNosotros {
-  border: 15px ridge #572700;
-  width: 560px;
+  border: 10px ridge #9c4600;
+  border-radius: 5px;
+  width: 550px;
   height: 315px;
+}
+
+.rowVideo {
+  background: -webkit-gradient(linear, left top, left bottom, from(#070500), to(rgba(255, 153, 0, 0.692)));
+  background: linear-gradient(#070500, rgba(255, 153, 0, 0.692));
 }
 
 .abotonesNosotros {
@@ -399,6 +304,7 @@ tr:hover td {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 25%;
 }
 
 /* Nosotros Fin */
@@ -466,21 +372,14 @@ tr:hover td {
 
 .h1Index, .h2index {
   font-size: 3rem;
-  margin: 30px;
-  padding: 3px;
-  text-align: center;
   border-top: solid 4px black;
   border-bottom: solid 4px black;
   border-radius: 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-shadow: 0px 3px 5px;
+  text-shadow: 2px 2px 5px;
 }
 
 .h2index {
   font-size: 28px;
-  text-shadow: 1px 2px 4px;
 }
 
 .imgSecciones {
@@ -492,8 +391,8 @@ tr:hover td {
 }
 
 .imgSecciones:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 /* inicio fin */
@@ -510,26 +409,6 @@ tr:hover td {
     -webkit-transform: none;
             transform: none;
   }
-  /* catering comienzo */
-  .divCatering {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.2fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
-        grid-template-rows: 0.2fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
-        grid-template-areas: "header header header" "titulos titulos titulos" "imgytabla imgytabla imgytabla" "articulocat articulocat articulocat" "contacto contacto contacto" "footer footer footer";
-  }
-  .imgYtabla {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  /* catering fin */
   .colCont {
     border-left: none;
     border-top: 3px solid black;
@@ -546,35 +425,15 @@ tr:hover td {
     font-size: 20px;
   }
   /* inicio fin */
-  /* catering comienzo */
-  .divCatering {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: 0.1fr 0.4fr 0.9fr 1fr 0.4fr 0.1fr;
-        grid-template-rows: 0.1fr 0.4fr 0.9fr 1fr 0.4fr 0.1fr;
-        grid-template-areas: "header header header" "titulos titulos titulos" "imgytabla imgytabla imgytabla" "articulocat articulocat articulocat" "contacto contacto contacto" "footer footer footer";
+  .carouselCatering {
+    margin-top: 11.7%;
   }
-  .imgComboFull {
-    margin-bottom: 30px;
-  }
-  .artlistInfo {
-    padding: 30px;
-  }
-  .artlistInfo .listInfo {
-    font-size: 25px;
-  }
-  /* categing fin */
   /* nosotros comienzo */
-  .tituloNos {
-    margin-top: 20%;
+  .containerNos {
+    padding-top: 20%;
   }
-  .h1nosotros {
-    font-size: 35px;
-  }
-  .pNosotros {
-    font-size: 30px;
+  .abotonesNosotros {
+    width: 50%;
   }
   /* nosotros fin */
 }
@@ -606,39 +465,6 @@ tr:hover td {
     font-size: 20px;
   }
   /* menu fin */
-  /* catering comienzo */
-  .divCatering {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 0.2fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
-        grid-template-rows: 0.2fr 0.3fr 0.9fr 1fr 0.4fr 0.1fr;
-        grid-template-areas: "header header" "titulos titulos" "imgytabla imgytabla" "articulocat articulocat" "contacto contacto" "footer footer";
-  }
-  .h1Catering {
-    font-size: 40px;
-  }
-  .h2Catering {
-    font-size: 30px;
-  }
-  .imgComboFull {
-    width: 60%;
-  }
-  .artlistInfo {
-    padding: 10px;
-    margin: 20px;
-  }
-  .artlistInfo .listInfo {
-    font-size: 20px;
-    margin: 3px;
-  }
-  /* catering fin */
-  /* nosotros comienzo */
-  .h1nosotros {
-    font-size: 38px;
-  }
-  /* nosotros fin */
   /*footer comienzo*/
   footer .logosRedesFlex a i {
     font-size: 40px;
@@ -651,38 +477,20 @@ tr:hover td {
 
 @media (max-width: 500px) {
   .carouselInicio {
-    margin-top: 13%;
+    margin-top: 12.9%;
   }
-  /* catering comienzo */
-  .divCatering {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 0.1fr 0.3fr 0.9fr 1fr 0.3fr 0.1fr;
-        grid-template-rows: 0.1fr 0.3fr 0.9fr 1fr 0.3fr 0.1fr;
-        grid-template-areas: "header" "titulos" "imgytabla" "articulocat" "contacto" "footer";
+  .containerMenu {
+    padding-top: 18%;
   }
-  .artlistInfo {
-    padding: 0;
-    margin: 5px;
+  .carouselCatering {
+    margin-top: 12.9%;
   }
-  .artlistInfo .listInfo {
-    font-size: 15px;
-    margin: 3px;
-  }
-  .imgComboFull {
-    margin-bottom: 10px;
-  }
-  .aContacto {
-    font-size: 25px;
-    margin: 10px;
-  }
-  /* catering fin */
   /* nosotros comienzo */
-  .vidNosotros {
-    width: 80%;
-    margin: 20px 0 20px 0;
+  .h1nosotros {
+    font-size: 2.1rem;
+  }
+  .abotonesNosotros {
+    width: 70%;
   }
   /* nosotros fin */
 }
@@ -697,8 +505,11 @@ tr:hover td {
   }
   /* menu comienzo */
   .h1ap {
-    font-size: 40px;
+    font-size: 2.4rem;
   }
   /* menu fin */
+  .h1nosotros {
+    font-size: 1.5rem;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

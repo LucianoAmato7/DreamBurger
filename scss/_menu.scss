@@ -81,4 +81,19 @@
     background-color: black;
 }
 
+.offCanv { 
+
+    background: linear-gradient(rgb(251, 219, 113), white);
+    
+    .bodyCarrito {
+        
+        ul {
+            list-style: none;
+        }
+
+        p {
+            margin-left: 9%;
+        }
+    }
+}
 /* Menu fin */

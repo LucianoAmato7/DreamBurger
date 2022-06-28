@@ -1,45 +1,17 @@
 /* catering comienzo*/
 
-.titulosCatering {
-    grid-area: titulos;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: center;
+.carouselCatering {
+    margin-top: 10.8%;
 }
 
-.h2Catering {
-    font-size: 40px;
-    text-decoration: underline;
-    margin: 0 30px 30px 30px;
+.h1Cat {
+    font-style: italic;
+    font-size: 2rem;
+    text-shadow: 2px 2px 5px;
     text-align: center;
-    text-transform: uppercase;
-}
-
-.h1Catering {
-    font-size: 55px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.imgYtabla {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    grid-area: imgytabla;
-
-}
-
-.figImgComboFull {
-    display: flex;
-    justify-content: center;
-}
-
-.imgComboFull {
-    display: flex;
-    width: 95%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 10px;
 }
 
 tr:hover td{
@@ -47,37 +19,14 @@ tr:hover td{
     color: black;
 }
 
-
 .artlistInfo {
-    padding: 40px;
-    margin: 60px;
-    border: 20px groove rgb(100, 45, 0);
-    grid-area: articulocat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border: 8px groove rgb(100, 45, 0);
+    border-radius: 20px;
     background: linear-gradient(rgb(255, 238, 218), rgb(255, 208, 107));
-
-    .listInfo {
-        font-size: 30px;
-        margin-left: 30px;
-
-        .subList {
-
-            li {
-                margin-left: 50px;
-            }
-            
-        } 
-
-    }
-
 }
 
 .divContacto {
     text-align: center;
-    margin: 60px;
-    grid-area: contacto;
 }
 
 .aContacto {
@@ -92,19 +41,6 @@ tr:hover td{
     text-decoration: none;
     color: $buttoncolor;
     background-color: black;
-}
-
-.divCatering {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.5fr 1fr 1fr 0.4fr 0.1fr;
-    grid-template-areas: 
-    "header header header header"
-    "titulos titulos titulos titulos"
-    "imgytabla imgytabla imgytabla imgytabla"
-    "articulocat articulocat articulocat articulocat"
-    "contacto contacto contacto contacto"
-    "footer footer footer footer";
 }
 
 

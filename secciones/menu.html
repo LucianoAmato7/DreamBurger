@@ -42,9 +42,9 @@
                                 <a class="nav-link active text-warning seccionesNav" href="./contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active text-warning seccionesNav" href="#">
+                                <a class="nav-link active text-warning seccionesNav" href="#offcanvasScrolling" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                                     <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
+                                </a> 
                             </li>
                         </ul>
                     </div>
@@ -521,13 +521,32 @@
 
             <div class="col d-flex justify-content-center">
     
-                <a class="carritoMenu aAnim" href="">Ver Pedido</a>
-            
+                <button class="btn btn-dark carritoMenu text-warning aAnim shadow" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">CARRITO</button>
+                
+                <div class="offcanvas offcanvas-start offCanv" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <i class="fa-solid fa-cart-shopping fs-2"></i>
+                        <h5 class="offcanvas-title fs-3" id="offcanvasExampleLabel">CARRITO</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bodyCarrito">
+                        <ul class="border-bottom border-dark fs-5">
+                            <li>$ xxx,xx</li>
+                            <li>$ xxx,xx</li>
+                            <li>$ xxx,xx</li>
+                            <li>$ xxx,xx</li>
+                            <li>$ xxx,xx</li>
+                        </ul>
+
+                        <p class="fs-5"><strong>$ xxx,xx TOTAL</strong></p>
+
+                    </div>
+                </div>
             </div>
     
         </div>
 
-    </div>   
+    </div> 
 
     <footer>
 
